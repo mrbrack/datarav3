@@ -1,0 +1,17 @@
+.button {
+  background: #fcff99;
+  padding: 0.5em 2em;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: black;
+
+  &:hover {
+    background: #dbff99;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,11 @@
+.cover {
+  // background: url("/hero.jpg") no-repeat center right;
+  background-size: contain;
+  padding: 2.5% 0 1% 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .cover {
+    margin-bottom: 2rem;
+  }
+}

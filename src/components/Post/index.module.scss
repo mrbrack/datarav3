@@ -1,0 +1,47 @@
+.post {
+  &Title {
+    margin-bottom: 0.7em;
+  }
+
+  &Description {
+    line-height: 1.6;
+  }
+
+  &Content {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: start;
+    gap: 1.5rem;
+  }
+
+  &Link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      .postTitle::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .post {
+    &Content {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    &Details {
+      background: #ffffff;
+      padding: 1rem 1rem;
+      margin-top: -5px;
+    }
+
+    &ImageWidth {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
