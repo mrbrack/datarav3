@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/datarav3/(.*)",
+      "destination": "/studio/index.html"
+    }
+  ]
+}
