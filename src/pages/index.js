@@ -43,6 +43,7 @@ export default function Home({ initialPosts, total }) {
           possibilities of code.
         </title>
       </Head>
+      <SocialNetworks />
       <Section>
         <Title>work/blog</Title>
         <PostGrid>

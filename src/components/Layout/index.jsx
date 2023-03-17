@@ -1,11 +1,15 @@
 import { Navbar, Footer } from "@/components";
+import styles from "./index.module.scss";
+import cl from "classnames";
 
-export default function Layout(children) {
+const Layout = ({ children, className }) => {
   return (
-    <>
+    <div className={cl(className, styles.wrapper)}>
       <Navbar />
-      {children}
+      <main className={cl(className, styles.main)}>{children}</main>
       <Footer />
-    </>
+    </div>
   );
-}
+};
+
+export default Layout;
