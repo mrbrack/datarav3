@@ -44,13 +44,6 @@ export default function Home({ initialPosts, total }) {
         </title>
       </Head>
       <Section>
-        <Cover
-          title="datarav3"
-          subTitle="generative artist based in Bath, UK."
-        />
-        <SocialNetworks />
-      </Section>
-      <Section>
         <Title>work/blog</Title>
         <PostGrid>
           {posts.map((post) => (
