@@ -1,1 +1,1 @@
-# datarav3 - generative artist.
+# datarav3 - generative artist, based in Bath, UK.
