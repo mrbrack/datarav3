@@ -61,6 +61,15 @@ h1 {
   font-style: normal;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 h2 {
   font-size: 1.9rem;
   line-height: 1.25;
@@ -69,6 +78,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
 }
+
 h3 {
   font-size: 1.35rem;
   line-height: 1.3;
