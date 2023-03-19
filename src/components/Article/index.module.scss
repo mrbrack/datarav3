@@ -1,26 +1,21 @@
 .article {
-    position: relative;
-    padding: 3rem 4rem 3rem 6rem;
-    max-width: 1300px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  position: relative;
+  padding: 2rem 0;
+  max-width: 1300px;
+  box-sizing: border-box;
 
-    &Back {
-        position: absolute;
-        left: 3rem;
-        font-size: 2rem;
-        top: 4rem;
-        color: black;
-        text-decoration: none;
-    }
-}
+  &Back {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid black 2px;
+  }
 
-@media only screen and (max-width: 800px) {
-    .article {
-        padding: 1rem;
-
-        &Back {
-            position: static;
-        }
-    }
+  &BackText {
+    padding-left: 0.25rem;
+  }
 }

@@ -43,11 +43,12 @@
 
     ul {
       display: flex;
-      gap: 1rem;
-      justify-content: center;
+      gap: 0.25rem;
+      justify-content: left;
 
       li {
         margin-bottom: 0;
+        font-size: 1rem;
       }
     }
   }

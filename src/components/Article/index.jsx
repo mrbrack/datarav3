@@ -5,12 +5,15 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const Article = ({ children, className, backUrl }) => {
   return (
-    <article className={cl(className, styles.article)}>
+    <>
       <Link href={backUrl} className={styles.articleBack}>
         <AiOutlineArrowLeft />
+        <p className={styles.articleBackText}>Back</p>
       </Link>
-      <div className={styles.articleContent}>{children}</div>
-    </article>
+      <article className={cl(className, styles.article)}>
+        <div className={styles.articleContent}>{children}</div>
+      </article>
+    </>
   );
 };
 

@@ -10,18 +10,12 @@ const Navbar = (className) => {
           <Link href="/">
             <h1>datarav3</h1>
           </Link>
-          <h3>Generative artist based in Bath, UK.</h3>
+          <h4>Generative artist based in Bath, UK.</h4>
         </div>
         <div className={cl(className, styles.nav_bar)}>
           <ul className={cl(className, styles.nav_items)}>
             <li>
               <Link href="/">home</Link>
-            </li>
-            <li>
-              <Link href="/about">about</Link>
-            </li>
-            <li>
-              <Link href="/about">contact</Link>
             </li>
           </ul>
         </div>

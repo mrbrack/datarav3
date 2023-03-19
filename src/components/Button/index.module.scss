@@ -6,9 +6,12 @@
   transition: all 0.3s;
   cursor: pointer;
   color: black;
+  margin-top: 1rem;
 
   &:hover {
     background: #dbff99;
+    opacity: 0.8;
+    transition: opacity 0.3s;
   }
 
   &:disabled {

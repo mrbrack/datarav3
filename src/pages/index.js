@@ -45,7 +45,8 @@ export default function Home({ initialPosts, total }) {
       </Head>
       <SocialNetworks />
       <Section>
-        <Title>work/blog</Title>
+        <Title type="medium">work/blog</Title>
+        <Title />
         <PostGrid>
           {posts.map((post) => (
             <Post key={post._id} {...post} />
