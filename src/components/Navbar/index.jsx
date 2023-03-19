@@ -7,17 +7,13 @@ const Navbar = (className) => {
     <header className={cl(className, styles.header)}>
       <nav className={cl(className, styles.nav)}>
         <div>
-          <Link href="/">
-            <h1>datarav3</h1>
+          <Link href="/" className={cl(className, styles.logo)}>
+            datarav3
           </Link>
           <h4>Generative artist based in Bath, UK.</h4>
         </div>
         <div className={cl(className, styles.nav_bar)}>
-          <ul className={cl(className, styles.nav_items)}>
-            <li>
-              <Link href="/">home</Link>
-            </li>
-          </ul>
+          <ul className={cl(className, styles.nav_items)}></ul>
         </div>
       </nav>
     </header>

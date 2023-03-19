@@ -1,31 +1,58 @@
 import React from "react";
 import Head from "next/head";
-import { Article, Title, Content } from "@/components";
+import Link from "next/link";
+import { Article, Content, Section } from "@/components";
 import Image from "next/image";
 import { client } from "@/lib/client";
 import { format } from "date-fns";
 import { urlFor } from "@/lib/client";
 import styles from "./styles.module.scss";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const Post = ({ post }) => {
-  const date = format(new Date(post.published_date), "dd MMM yyy");
+  const router = useRouter();
 
+  const date = format(new Date(post.published_date), "dd MMM yyy");
   return (
-    <Article backUrl="/" className={styles.post}>
+    <>
       <Head>
-        <title>datarav3 - {post.meta_title}</title>
+        <title>{"datarav3 - " + post.meta_title}</title>
+        <meta name="description" content={post.description} />
+        <link
+          rel="canonical"
+          href={`https://datarav3.co.uk/${post.slug.current}`}
+        />
       </Head>
-      <Title className={styles.postTitle}>{post.title}</Title>
-      <p className={styles.postDate}>{date}</p>
-      <Image
-        src={urlFor(post.image).url()}
-        alt={post.image.caption}
-        width="500"
-        height="500"
-        className={styles.postImageWidth}
-      />
-      <Content body={post.body} />
-    </Article>
+      <section className={styles.back}>
+        <button
+          type="button"
+          onClick={() => router.back()}
+          className={styles.backButton}
+        >
+          <AiOutlineArrowLeft />
+          <p>back</p>
+        </button>
+        <div className={styles.backTitle}>
+          <div className={styles.backTitleHeading}>
+            <div>
+              <h1 className={styles.backTitle}>{post.title}</h1>
+              <p className={styles.backTitleDate}>published: {date}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Section type="two-column">
+        <Image
+          src={urlFor(post.image).url()}
+          alt={post.image.caption}
+          width="500"
+          height="500"
+          className={styles.postImageWidth}
+        />
+        <Content body={post.body} />
+      </Section>
+    </>
   );
 };
 

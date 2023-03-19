@@ -1,13 +1,5 @@
 import { loadData } from "./api/post";
-import {
-  Section,
-  Cover,
-  SocialNetworks,
-  Title,
-  PostGrid,
-  Post,
-  Button,
-} from "@/components";
+import { Section, SocialNetworks, PostGrid, Post, Button } from "@/components";
 import { useState } from "react";
 import Head from "next/head";
 
@@ -38,15 +30,18 @@ export default function Home({ initialPosts, total }) {
   return (
     <div>
       <Head>
-        <title>
-          datarav3 - generative artist based in Bath, UK. Exploring the infinite
-          possibilities of code.
-        </title>
+        <title>datarav3 - generative artist based in Bath, UK.</title>
+        <meta
+          name="description"
+          content="Generative artist, creative coder and web developer exploring the infinite possibilities of code."
+        />
+        <link rel="canonical" href="https://dararav3.co.uk" />
       </Head>
       <SocialNetworks />
-      <Section>
-        <Title type="medium">work/blog</Title>
-        <Title />
+      <Section type="standard">
+        <h2 type="medium" className="center">
+          work/blog
+        </h2>
         <PostGrid>
           {posts.map((post) => (
             <Post key={post._id} {...post} />
@@ -60,7 +55,7 @@ export default function Home({ initialPosts, total }) {
             }}
           >
             <Button disabled={loading} onClick={getMorePosts}>
-              Load more posts...
+              load more posts...
             </Button>
           </div>
         )}

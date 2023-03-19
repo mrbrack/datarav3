@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = (className) => {
   return (
     <footer className={cl(className, styles.footer)}>
-      <p>&copy; Copyright 2023, datarav3. All Rights Reserved.</p>
+      <small>&copy; Copyright 2023, datarav3. All Rights Reserved.</small>
     </footer>
   );
 };

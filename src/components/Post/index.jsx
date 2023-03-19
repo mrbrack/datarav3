@@ -1,7 +1,6 @@
 import cl from "classnames";
 import Link from "next/link";
 import Image from "next/image";
-import { Title } from "@/components";
 import styles from "./index.module.scss";
 import { urlFor } from "@/lib/client";
 
@@ -29,7 +28,7 @@ const Post = ({
           />
         </div>
         <div className={styles.postDetails}>
-          <Title type="small">{title}</Title>
+          <h3>{title}</h3>
           <p>{description}</p>
           <p>{published_date}</p>
         </div>
