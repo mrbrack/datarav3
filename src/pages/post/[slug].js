@@ -31,7 +31,7 @@ const Post = ({ post }) => {
           className={styles.backButton}
         >
           <AiOutlineArrowLeft />
-          <p>back</p>
+          <h4>back</h4>
         </button>
         <div className={styles.backTitle}>
           <div className={styles.backTitleHeading}>
