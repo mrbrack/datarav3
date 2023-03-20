@@ -13,7 +13,13 @@ const Navbar = (className) => {
           <h4>Generative artist based in Bath, UK.</h4>
         </div>
         <div className={cl(className, styles.nav_bar)}>
-          <ul className={cl(className, styles.nav_items)}></ul>
+          <ul className={cl(className, styles.nav_items)}>
+            <li>
+            <Link href="/">
+            home
+          </Link>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>

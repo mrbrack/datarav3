@@ -4,14 +4,14 @@
   box-sizing: border-box;
 
   &Standard {
-    padding: 2rem 0;
+    margin: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   &TwoColumn {
-    padding: 2rem 0;
+    margin: 2rem 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
