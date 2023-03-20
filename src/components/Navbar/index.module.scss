@@ -38,6 +38,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-direction: column-reverse;
+    text-align: center;
+
+    &_bar {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
   }
 }

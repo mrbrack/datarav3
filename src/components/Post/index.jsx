@@ -22,8 +22,8 @@ const Post = ({
           <Image
             src={urlFor(image).url()}
             alt={image.caption}
-            width="175"
-            height="175"
+            width="200"
+            height="200"
             className={styles.postImageWidth}
           />
         </div>

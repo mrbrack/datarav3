@@ -12,9 +12,9 @@
 
   &TwoColumn {
     margin: 2rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
     gap: 2rem;
   }
 }
