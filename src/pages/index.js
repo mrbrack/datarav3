@@ -39,7 +39,7 @@ export default function Home({ initialPosts, total }) {
       </Head>
       <SocialNetworks />
       <Section type="standard">
-        <video width="1300" height="650" autoPlay muted loop>
+        <video width="1300" height="650" className="header-video" autoPlay muted loop>
           <source src="/planet_header.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
