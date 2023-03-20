@@ -32,7 +32,7 @@
 @media only screen and (max-width: 800px) {
   .screenEgg {
     padding: 0.5rem;
-    display: block;
+    display: none; // change back to block later
     &Right,
     &Left {
       transition: none;

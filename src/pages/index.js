@@ -47,9 +47,6 @@ export default function Home({ initialPosts, total }) {
         </video>
       </Section>
       <Section type="standard">
-        <h2 type="medium" className="center">
-          work/blog
-        </h2>
         <PostGrid>
           {posts.map((post) => (
             <Post key={post._id} {...post} />

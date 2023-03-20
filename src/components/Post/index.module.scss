@@ -41,6 +41,12 @@
       background: #ffffff;
       padding: 1rem 1rem;
       margin-top: -5px;
+      text-align: center;
+    
+    & p {
+      padding-top: .1rem;
+      margin-bottom: 0px;
+    }
     }
 
     &ImageWidth {
