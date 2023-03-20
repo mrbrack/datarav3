@@ -39,7 +39,7 @@ export default function Home({ initialPosts, total }) {
       </Head>
       <SocialNetworks />
       <Section type="standard">
-        <video width="1300" height="650" className="header-video" autoPlay muted loop>
+        <video width="1300" height="650" className="header-video" autoPlay playsInline muted loop>
         <source src="/planet_header.mp4" type="video/mp4" />
         <source src="/planet_header.ogv" type="video/ogg" />
         <source src="/planet_header.webm" type="video/webm" />
