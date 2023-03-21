@@ -27,5 +27,11 @@
       justify-content: center;
       align-items: center;
     }
+
+    &Standard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
