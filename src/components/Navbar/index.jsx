@@ -45,12 +45,12 @@ const Navbar = (className) => {
       <nav className={navbar ? (cl(className, styles.nav_bar_svp_content)) : (cl(className, styles.nav_bar_svp_content_hidden))}>
       <ul className={cl(className, styles.nav_items)}>
             <li>
-            <Link href="/">
+            <Link href="/" onClick={() => {setNavbar(!navbar)}}>
             home
             </Link>
             </li>
             <li>
-            <Link href="/about">
+            <Link href="/about" onClick={() => {setNavbar(!navbar)}}>
             about
             </Link>
             </li>
