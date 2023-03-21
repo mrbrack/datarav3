@@ -42,7 +42,7 @@ const Navbar = (className) => {
           </ul>
         </div>
       </nav>
-      <nav className={cl(className, styles.nav_bar_svp_content)}>
+      <nav className={navbar ? (cl(className, styles.nav_bar_svp_content)) : (cl(className, styles.nav_bar_svp_content_hidden))}>
       <ul className={cl(className, styles.nav_items)}>
             <li>
             <Link href="/">
