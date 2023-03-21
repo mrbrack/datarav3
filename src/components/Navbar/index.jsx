@@ -15,7 +15,7 @@ const Navbar = (className) => {
           <Link href="/" className={cl(className, styles.logo)}>
             datarav3
           </Link>
-          <h4>generative artist based in Bath, UK.</h4>
+          <h4>generative artist based in Bristol, UK.</h4>
         </div>
         <div className={cl(className, styles.nav_bar_svp)}>
         <button onClick={() => {setNavbar(!navbar)}} style={{ color: '#FF99CF'}}>
