@@ -25,7 +25,6 @@
 
   & li {
     margin-left: .75rem;
-    margin-left: .75rem;
   }
 
 }
@@ -40,6 +39,12 @@
 
 .nav_bar_svp {
   z-index: 10000;
+
+  & button {
+    padding: 0px;
+    margin: 0px;
+  }
+
 }
 
 .logo {
@@ -52,6 +57,14 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+  .nav_items {
+    & li {
+      margin-left: 0rem;
+      margin-left: 0rem;
+    }
+  
+  }
   
   .nav_bar_svp {
     display: block;
@@ -96,11 +109,6 @@
         z-index: 5000;
         display: flex;
         justify-content: center;
-        -webkit-transition: height 3s; 
-        -moz-transition: height 3s; 
-        -ms-transition: height 3s; 
-        -o-transition: height 3s; 
-        transition: height 3s;  
 
         .nav_items {
           display: flex;
