@@ -130,3 +130,17 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.svp {
+  display: none !important;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .svp {
+      display: block !important;
+    }
+  
+    .lvp {
+      display: none !important;
+    }
+  }
