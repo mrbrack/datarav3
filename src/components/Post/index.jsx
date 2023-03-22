@@ -28,8 +28,8 @@ const Post = ({
           />
         </div>
         <div className={styles.postDetails}>
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <h3 className={styles.postTitle}>{title}</h3>
+          <p className={styles.postDescription}>{description}</p>
           <p>{published_date}</p>
         </div>
       </div>

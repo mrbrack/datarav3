@@ -1,10 +1,12 @@
 .post {
   &Title {
-    margin-bottom: 0.7em;
+    /* */
   }
 
   &Description {
     line-height: 1.6;
+    color: #101820;
+    font-weight: 400;
   }
 
   &Content {

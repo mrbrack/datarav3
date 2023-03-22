@@ -30,7 +30,7 @@ export default function Home({ initialPosts, total }) {
   return (
     <div>
       <Head>
-        <title>datarav3 - generative artist based in Bath, UK.</title>
+        <title>datarav3 - generative artist based in Bristol, UK.</title>
         <meta
           name="description"
           content="Generative artist, creative coder and web developer exploring the infinite possibilities of code."
