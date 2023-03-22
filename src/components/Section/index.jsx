@@ -20,6 +20,24 @@ const Section = ({ children, className, type, conditions}) => {
     }
   }
 
+  if (type === "top") {
+
+    console.log(conditions)
+    if(conditions) {
+      return (
+        <section className={cl(className, styles.sectionTop, conditions)}>
+          {children}
+        </section>
+      ); 
+    } else {
+      return (
+        <section className={cl(className, styles.sectionTop)}>
+          {children}
+        </section>
+      );
+    }
+  }
+
   if (type == "two-column") {
     return (
       <section className={cl(className, styles.sectionTwoColumn)}>

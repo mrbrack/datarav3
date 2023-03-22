@@ -38,14 +38,14 @@ export default function Home({ initialPosts, total }) {
         <link rel="canonical" href="https://dararav3.co.uk" />
       </Head>
       <SocialNetworks />
-      <Section type="standard" conditions="lvp">
+      <Section type="top" conditions="lvp">
         <video width="1300" height="650" className="header-video" autoPlay playsInline muted loop>
         <source src="/planet_header_lvp.mp4" type="video/mp4" />
         <source src="/planet_header_lvp.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </Section>
-      <Section type="standard" conditions="svp">
+      <Section type="top" conditions="svp">
         <video width="1080" height="1920" className="header-video" autoPlay playsInline muted loop>
         <source src="/planet_header_svp.mp4" type="video/mp4" />
         <source src="/planet_header_svp.webm" type="video/webm" />
@@ -53,6 +53,7 @@ export default function Home({ initialPosts, total }) {
         </video>
       </Section>
       <Section type="standard">
+      <h2 className="center">work</h2>
         <PostGrid>
           {posts.map((post) => (
             <Post key={post._id} {...post} />

@@ -9,6 +9,7 @@ button {
 
 html,
 body {
+  background: #FBFBFB;
   background: #f4f5f0;
 }
 
@@ -143,4 +144,11 @@ img {
     .lvp {
       display: none !important;
     }
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }

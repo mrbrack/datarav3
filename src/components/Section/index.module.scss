@@ -2,16 +2,23 @@
   max-width: 1300px;
   margin: 0 auto;
   box-sizing: border-box;
-
-  &Standard {
+  
+  &Top {
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
+  &Standard {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &TwoColumn {
-    margin: 2rem 0;
+    margin: 4rem 0;
     display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
