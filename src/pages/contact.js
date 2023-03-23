@@ -1,6 +1,7 @@
 import { Section, Button } from "@/components";
 import Image from "next/image";
 import { useState } from "react";
+import Head from "next/head";
 
 // 17:01 https://www.youtube.com/watch?v=Te4ESNxq_xU
 
@@ -9,6 +10,8 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+
+
 
     const onSubmit = async (e) => {
       e.preventDefault();
@@ -32,6 +35,15 @@ const Contact = () => {
     }
 
     return (
+      <>
+      <Head>
+      <title>datarav3 - contact - generative artist based in Bristol, UK.</title>
+      <meta
+        name="description"
+        content="I'm always keen to hear from like-minded people. Drop me a message to schedule a coffee/call."
+      />
+      <link rel="canonical" href="https://dararav3.co.uk/contact" />
+    </Head>
     <Section type="two-column-top">
       <div>
         <Image
@@ -62,6 +74,7 @@ const Contact = () => {
         </form>
         </div>
     </Section>
+    </>
     )
 }
 

@@ -1,8 +1,18 @@
 import { Section } from "@/components";
 import Image from "next/image";
+import Head from "next/head";
 
 const About = () => {
     return (
+      <>
+      <Head>
+      <title>datarav3 - about - generative artist based in Bristol, UK.</title>
+      <meta
+        name="description"
+        content="datarav3 (Nigel Fryatt) is a generative artist who uses creative programming to explore the intersection between technology and human emotion."
+      />
+      <link rel="canonical" href="https://dararav3.co.uk/about" />
+    </Head>
     <Section type="two-column-top">
         <Image
           src="/datarav3_about_me.jpg"
@@ -19,6 +29,7 @@ const About = () => {
 <p>contact: nigel@enfiniti.xyz</p>
     </div>
     </Section>
+    </>
     )
 }
 
