@@ -15,9 +15,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main>
           <Component {...pageProps} />
-        </main>
       </Layout>
     </>
   );

@@ -39,6 +39,11 @@ const Navbar = (className) => {
             about
             </Link>
             </li>
+            <li>
+            <Link href="/contact">
+            contact
+            </Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -52,6 +57,11 @@ const Navbar = (className) => {
             <li>
             <Link href="/about" onClick={() => {setNavbar(!navbar)}}>
             about
+            </Link>
+            </li>
+            <li>
+            <Link href="/contact">
+            contact
             </Link>
             </li>
           </ul>

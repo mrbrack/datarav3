@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
     return (
-    <Section type="two-column">
+    <Section type="two-column-top">
         <Image
           src="/datarav3_about_me.jpg"
           alt="Nigel Fryatt working in the EMERGE creative studio at Sion Hill, Bath."

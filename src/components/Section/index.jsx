@@ -22,7 +22,6 @@ const Section = ({ children, className, type, conditions}) => {
 
   if (type === "top") {
 
-    console.log(conditions)
     if(conditions) {
       return (
         <section className={cl(className, styles.sectionTop, conditions)}>
@@ -38,9 +37,17 @@ const Section = ({ children, className, type, conditions}) => {
     }
   }
 
-  if (type == "two-column") {
+  if (type === "two-column") {
     return (
-      <section className={cl(className, styles.sectionTwoColumn)}>
+      <section className={cl(className, styles.sectionTwoColumnTop)}>
+        {children}
+      </section>
+    );
+  }
+
+  if (type === "two-column-top") {
+    return (
+      <section className={cl(className, styles.sectionTwoColumnTop)}>
         {children}
       </section>
     );
