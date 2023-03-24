@@ -7,7 +7,6 @@ import { urlFor } from "@/lib/client";
 const Post = ({
   className,
   thumbnail,
-  image,
   title,
   description,
   slug,

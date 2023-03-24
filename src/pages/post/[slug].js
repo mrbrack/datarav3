@@ -46,8 +46,8 @@ const Post = ({ post }) => {
         <Image
           src={urlFor(post.image).url()}
           alt={post.image.caption}
-          width="500"
-          height="500"
+          width="1080"
+          height="1080"
           className={styles.postImageWidth}
         />
         <Content body={post.body} />
