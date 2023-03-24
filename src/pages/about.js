@@ -30,7 +30,7 @@ const About = () => {
             experiences that allow us to access feelings that are intimate and
             human. Broadly, his work acts as a criticism of the fascination
             capitalism has with technology, as he fiercely denies the world that
-            this has created.{" "}
+            this has created.
           </p>
 
           <p>
@@ -39,13 +39,14 @@ const About = () => {
             servers throughout his childhood. Now, he splits his time between
             making websites as a freelance web developer and creating generative
             art. He is based in Bristol, UK and works out of the EMERGE creative
-            studio where he is a Creative Mentor in Creative Media.{" "}
+            studio where he is a mentor in Creative Media.
           </p>
           <p>
             “Algorithms have the potential to evoke powerful and intimate
             emotions, we just don’t talk about it enough. Or, perhaps, the types
-            of conversations we have about algorithms don’t afford people to
-            think in those ways. And to be honest, I find that disappointing.”
+            of conversations programmers tend to have about algorithms don’t
+            afford people to think in those ways. Yes, computer science is
+            important, but so is art.”
           </p>
         </div>
       </Section>

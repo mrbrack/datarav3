@@ -68,6 +68,8 @@ const Navbar = (className) => {
             >
               about
             </Link>
+          </li>
+          <li>
             <Link
               href="/contact"
               onClick={() => {

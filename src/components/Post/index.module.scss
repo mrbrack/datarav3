@@ -34,6 +34,10 @@
 
 @media only screen and (max-width: 800px) {
   .post {
+    &Title {
+      font-size: 1.1rem;
+    }
+
     &Content {
       grid-template-columns: 1fr;
       gap: 0;
@@ -44,16 +48,24 @@
       padding: 1rem 1rem;
       margin-top: -5px;
       text-align: center;
-    
-    & p {
-      padding-top: .1rem;
-      margin-bottom: 0px;
-    }
+      min-height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        padding-top: 0.1rem;
+        margin-bottom: 0px;
+      }
     }
 
     &ImageWidth {
       width: 100%;
       height: auto;
+    }
+
+    &Description {
+      display: none;
     }
   }
 }
