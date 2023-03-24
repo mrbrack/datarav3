@@ -47,8 +47,6 @@ const About = () => {
             of conversations we have about algorithms don’t afford people to
             think in those ways. And to be honest, I find that disappointing.”
           </p>
-
-          <p>contact: nigel@enfiniti.xyz</p>
         </div>
       </Section>
     </>
