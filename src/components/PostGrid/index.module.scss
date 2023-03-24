@@ -3,3 +3,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+
+@media only screen and (max-width: 800px) {
+  .postGrid {
+    gap: 1rem;
+  }
+}
