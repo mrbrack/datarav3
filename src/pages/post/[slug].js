@@ -21,7 +21,7 @@ const Post = ({ post }) => {
         <meta name="description" content={post.description} />
         <link
           rel="canonical"
-          href={`https://datarav3.co.uk/${post.slug.current}`}
+          href={`https://datarav3.art/${post.slug.current}`}
         />
       </Head>
       <section className={styles.back}>

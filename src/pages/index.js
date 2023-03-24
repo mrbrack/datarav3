@@ -35,27 +35,43 @@ export default function Home({ initialPosts, total }) {
           name="description"
           content="Generative artist, creative coder and web developer exploring the infinite possibilities of code."
         />
-        <link rel="canonical" href="https://dararav3.co.uk" />
+        <link rel="canonical" href="https://dararav3.art" />
       </Head>
       <SocialNetworks />
       <Section type="top" conditions="lvp">
-        <video width="1300" height="650" className="header-video" autoPlay playsInline muted loop>
-        <source src="/planet_header_lvp.mp4" type="video/mp4" />
-        <source src="/planet_header_lvp.ogv" type="video/ogg" />
-        <source src="/planet_header_lvp.webm" type="video/webm" />
+        <video
+          width="1300"
+          height="650"
+          className="header-video"
+          autoPlay
+          playsInline
+          muted
+          loop
+        >
+          <source src="/planet_header_lvp.mp4" type="video/mp4" />
+          <source src="/planet_header_lvp.ogv" type="video/ogg" />
+          <source src="/planet_header_lvp.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </Section>
       <Section type="top" conditions="svp">
-        <video width="1080" height="1920" className="header-video" autoPlay playsInline muted loop>
-        <source src="/planet_header_svp.mp4" type="video/mp4" />
-        <source src="/planet_header_svp.ogv" type="video/ogg" />
-        <source src="/planet_header_svp.webm" type="video/webm" />
+        <video
+          width="1080"
+          height="1920"
+          className="header-video"
+          autoPlay
+          playsInline
+          muted
+          loop
+        >
+          <source src="/planet_header_svp.mp4" type="video/mp4" />
+          <source src="/planet_header_svp.ogv" type="video/ogg" />
+          <source src="/planet_header_svp.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </Section>
       <Section type="standard">
-      <h2 className="center">work</h2>
+        <h2 className="center">work</h2>
         <PostGrid>
           {posts.map((post) => (
             <Post key={post._id} {...post} />

@@ -15,46 +15,69 @@ const Navbar = (className) => {
           <Link href="/" className={cl(className, styles.logo)}>
             datarav3
           </Link>
-          <h4>generative artist based in Bristol, UK.</h4>
+          <h1 className="h4">generative artist based in Bristol, UK.</h1>
         </div>
         <div className={cl(className, styles.nav_bar_svp)}>
-        <button onClick={() => {setNavbar(!navbar)}} style={{ color: '#FF99CF'}}>
-          {navbar ? (
-            <AiOutlineClose />
-          ) : (
-            <AiOutlineMenu />
-          )}
-        
-        </button>
+          <button
+            onClick={() => {
+              setNavbar(!navbar);
+            }}
+            style={{ color: "#FF99CF" }}
+          >
+            {navbar ? <AiOutlineClose /> : <AiOutlineMenu />}
+          </button>
         </div>
         <div className={cl(className, styles.nav_bar_lvp)}>
           <ul className={cl(className, styles.nav_items)}>
             <li>
-            <Link href="/">
-            home
-            </Link>
+              <Link href="/">home</Link>
             </li>
             <li>
-            <Link href="/about">
-            about
-            </Link>
+              <Link href="/about">about</Link>
+            </li>
+            <li>
+              <Link href="/about">contact</Link>
             </li>
           </ul>
         </div>
       </nav>
-      <nav className={navbar ? (cl(className, styles.nav_bar_svp_content)) : (cl(className, styles.nav_bar_svp_content_hidden))}>
-      <ul className={cl(className, styles.nav_items)}>
-            <li>
-            <Link href="/" onClick={() => {setNavbar(!navbar)}}>
-            home
+      <nav
+        className={
+          navbar
+            ? cl(className, styles.nav_bar_svp_content)
+            : cl(className, styles.nav_bar_svp_content_hidden)
+        }
+      >
+        <ul className={cl(className, styles.nav_items)}>
+          <li>
+            <Link
+              href="/"
+              onClick={() => {
+                setNavbar(!navbar);
+              }}
+            >
+              home
             </Link>
-            </li>
-            <li>
-            <Link href="/about" onClick={() => {setNavbar(!navbar)}}>
-            about
+          </li>
+          <li>
+            <Link
+              href="/about"
+              onClick={() => {
+                setNavbar(!navbar);
+              }}
+            >
+              about
             </Link>
-            </li>
-          </ul>
+            <Link
+              href="/contact"
+              onClick={() => {
+                setNavbar(!navbar);
+              }}
+            >
+              contact
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
