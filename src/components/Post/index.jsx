@@ -6,6 +6,7 @@ import { urlFor } from "@/lib/client";
 
 const Post = ({
   className,
+  thumbnail,
   image,
   title,
   description,
@@ -20,8 +21,8 @@ const Post = ({
       <div className={styles.postContent}>
         <div className={styles.postImage}>
           <Image
-            src={urlFor(image).url()}
-            alt={image.caption}
+            src={urlFor(thumbnail).url()}
+            alt={thumbnail.caption}
             width="200"
             height="200"
             className={styles.postImageWidth}

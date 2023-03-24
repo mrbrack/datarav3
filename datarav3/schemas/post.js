@@ -22,6 +22,28 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'thumbnail',
+      type: 'image',
+      title: 'Thumbnail',
+      validation: (Rule) => Rule.required(),
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Caption',
+        },
+        {
+          // Editing this field will be hidden behind an "Edit"-button
+          name: 'attribution',
+          type: 'string',
+          title: 'Attribution',
+        },
+      ],
+    },
+    {
       name: 'image',
       type: 'image',
       title: 'Image',
