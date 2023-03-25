@@ -96,7 +96,6 @@ export default function Home({ initialPosts, total }) {
 
 export async function getServerSideProps() {
   const { posts, total } = await loadData(0, LOAD_MORE_STEP);
-  console.log(posts);
   return {
     props: {
       initialPosts: posts,
