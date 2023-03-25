@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
         <div className="inner-container">
           {isSubmitted ? (
-            <div>Success</div>
+            <h3 className="center">Thanks for your message!</h3>
           ) : (
             <form className="contact_form" onSubmit={onSubmit}>
               <p>
