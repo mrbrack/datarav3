@@ -58,50 +58,52 @@ const Contact = () => {
           <small>Image © Bath Spa University (Niklas Aarre)</small>
         </div>
         <div className="inner-container">
-          isSubmitted ? (<div>Success</div>) : (
-          <form className="contact_form" onSubmit={onSubmit}>
-            <p>
-              <label htmlFor="name">name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="name"
-                name="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </p>
-            <p>
-              <label htmlFor="email">email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="email"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </p>
-            <p>
-              <label htmlFor="message">message</label>
-              <textarea
-                class="form-control-text"
-                rows="10"
-                placeholder="message"
-                name="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
-            </p>
-            <p>
-              <button id="submit-button" type="submit">
-                submit
-              </button>
-            </p>
-          </form>
-          );
+          {isSubmitted ? (
+            <div>Success</div>
+          ) : (
+            <form className="contact_form" onSubmit={onSubmit}>
+              <p>
+                <label htmlFor="name">name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="name"
+                  name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </p>
+              <p>
+                <label htmlFor="email">email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </p>
+              <p>
+                <label htmlFor="message">message</label>
+                <textarea
+                  class="form-control-text"
+                  rows="10"
+                  placeholder="message"
+                  name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
+              </p>
+              <p>
+                <button id="submit-button" type="submit">
+                  submit
+                </button>
+              </p>
+            </form>
+          )}
         </div>
       </Section>
     </>
