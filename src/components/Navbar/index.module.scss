@@ -37,6 +37,10 @@
 
 .nav_bar_lvp {
   display: flex;
+
+  &_active {
+    color: #ff99cf !important;
+  }
 }
 
 .nav_bar_svp_content,
