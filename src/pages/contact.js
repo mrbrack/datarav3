@@ -6,6 +6,7 @@ import Head from "next/head";
 // 17:01 https://www.youtube.com/watch?v=Te4ESNxq_xU
 
 const Contact = () => {
+  const [isSubmitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -25,6 +26,10 @@ const Contact = () => {
           "content-type": "application/json",
         },
       });
+
+      if (res.status === 200) {
+        setSubmitted(true);
+      }
     } catch (err) {
       console.log("ERR", err);
     }
@@ -53,6 +58,7 @@ const Contact = () => {
           <small>Image © Bath Spa University (Niklas Aarre)</small>
         </div>
         <div className="inner-container">
+          isSubmitted ? (<div>Success</div>) : (
           <form className="contact_form" onSubmit={onSubmit}>
             <p>
               <label htmlFor="name">name</label>
@@ -95,6 +101,7 @@ const Contact = () => {
               </button>
             </p>
           </form>
+          );
         </div>
       </Section>
     </>
