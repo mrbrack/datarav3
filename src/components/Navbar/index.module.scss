@@ -20,12 +20,11 @@
 .nav_items {
   display: flex;
   flex-direction: row;
-  gap: 0.85rem;
   align-items: center;
 
   & li {
 
-    margin-left: 0.5rem;
+    margin-left: 0.85rem;
 
     & a {
       color: #101820;
@@ -133,7 +132,6 @@
         .nav_items {
           display: flex;
           flex-direction: column;
-          gap: 2rem;
 
           li {
             font-size: 1.75rem;
