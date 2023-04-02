@@ -24,6 +24,9 @@
   align-items: center;
 
   & li {
+
+    margin-left: 0.5rem;
+
     & a {
       color: #101820;
       font-family: "Poppins", sans-serif;
@@ -74,6 +77,7 @@
 
   .nav_items {
     & li {
+      margin-bottom: 1.85rem;
       margin-left: 0rem;
       margin-left: 0rem;
     }
