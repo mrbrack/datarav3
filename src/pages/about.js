@@ -11,7 +11,7 @@ const About = () => {
         </title>
         <meta
           name="description"
-          content="datarav3 (Nigel Fryatt) is a generative artist who uses creative programming to explore the intersection between technology and human emotion."
+          content="datarav3 (Nigel Fryatt) is a generative artist who uses creative programming to discovers the intersection between technology and human emotion."
         />
         <link rel="canonical" href="https://dararav3.art/about" />
       </Head>
