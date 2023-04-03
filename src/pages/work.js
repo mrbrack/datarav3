@@ -31,7 +31,7 @@ const Work = ({ initialPosts, total }) => {
     <>
       <Head>
         <title>
-          datarav3 - about - generative artist based in Bristol, UK.
+          datarav3 - work - generative artist based in Bristol, UK.
         </title>
         <meta
           name="description"
