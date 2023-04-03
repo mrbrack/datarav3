@@ -1,6 +1,4 @@
-// export const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
-
-export const GA_MEASUREMENT_ID = "G-3QFRQYENER";
+export const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 
 export const pageview = () => {
 window.gtag("config", GA_MEASUREMENT_ID, {
