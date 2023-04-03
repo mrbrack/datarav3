@@ -1,5 +1,5 @@
 import { loadData } from "./api/post";
-import { Section, SocialNetworks, PostGrid, Post, Button } from "@/components";
+import { Section, SocialNetworks, PostGrid, Post, Button, Flexy } from "@/components";
 import { useState } from "react";
 import Head from "next/head";
 
@@ -89,6 +89,14 @@ export default function Home({ initialPosts, total }) {
             </Button>
           </div>
         )}
+      </Section>
+      <Section type="standard">
+      <h2 className="center">audio work</h2>
+        <Flexy>
+        <iframe style={{borderRadius: 0 + "px"}} src="https://open.spotify.com/embed/episode/3AMpdhH6rNW4ZCQV4oYIMN?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius: 0 + "px"}} src="https://open.spotify.com/embed/episode/0QGe1VI1gA6M6ONS6qSzy5?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius: 0 + "px"}} src="https://open.spotify.com/embed/episode/1IUfQb4GTOtBD2nW6JwR8m?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </Flexy>
       </Section>
     </div>
   );

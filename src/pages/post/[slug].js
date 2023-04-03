@@ -12,7 +12,6 @@ import { useRouter } from "next/router";
 
 const Post = ({ post }) => {
   const router = useRouter();
-
   const date = format(new Date(post.published_date), "dd MMM yyy");
   return (
     <>
