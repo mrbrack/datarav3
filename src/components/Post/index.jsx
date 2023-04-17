@@ -25,13 +25,13 @@ const Post = ({
       className={cl(className, styles.post)}
     >
       <div className={styles.postContent}>
-        <div className={styles.postContentImage}>
+        <div className={styles.postContentImageContainer}>
           <Image
             src={urlFor(thumbnail).url()}
             alt={thumbnail.caption}
             width="200"
             height="200"
-            className={styles.postImageWidth}
+            className={styles.postContentImageContainerImage}
           />
         </div>
         <div className={styles.postContentDetails}>

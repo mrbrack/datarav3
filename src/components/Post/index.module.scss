@@ -5,9 +5,13 @@
     gap: 0.25rem;
     background-color: #fefefe;
 
-    &Image {
+    &ImageContainer {
       position: relative;
       padding: 0rem;
+
+      &Image {
+        display: block;
+      }
     }
 
     &Details {
