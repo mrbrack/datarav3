@@ -55,7 +55,7 @@ const Contact = () => {
             width="1080"
             height="1080"
           />
-          <small>Image © Bath Spa University (Niklas Aarre)</small>
+          <small className="extra">Image © Bath Spa University (Niklas Aarre)</small>
         </div>
         <div className="inner-container">
           {isSubmitted ? (
