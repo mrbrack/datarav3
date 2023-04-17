@@ -1,71 +1,74 @@
 .post {
-  &Title {
-    /* */
-  }
-
-  &Description {
-    line-height: 1.6;
-    color: #101820;
-    font-weight: 400;
-  }
-
   &Content {
     display: grid;
-    grid-template-columns: 0.45fr 1fr;
-    align-items: start;
+    grid-template-columns: .4fr 1fr;
     gap: 0.25rem;
-  }
+    background-color: #fefefe;
 
-  &Details {
-    padding-left: 1rem;
-  }
+    &Image {
+      position: relative;
+      padding: 0rem;
+    }
 
-  &Link {
-    text-decoration: none;
-    color: black;
+    &Details {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
 
-    &:hover {
-      .postTitle::after {
-        width: 100%;
+      &Description {
+        line-height: 1.6;
+        color: #101820;
       }
+
+      &Date {
+        font-size: .9rem;
+        margin-bottom: 0.5rem;
+        color: #374049;
+      }
+
     }
   }
 }
 
 @media only screen and (max-width: 800px) {
   .post {
-    &Title {
-      font-size: 1.025rem;
-    }
-
-    &Content {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
+  &Content {
+    display: grid;
+    grid-template-columns: .33fr 1fr;
+    gap: 0.25rem;
 
     &Details {
-      background: #ffffff;
-      padding: 0.25rem 0.45rem;
-      margin-top: -5px;
-      text-align: center;
-      min-height: 4rem;
-      display: flex;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: .5fr .5fr;
+      padding: 1rem 1rem;
       align-items: center;
 
-      & p {
-        padding-top: 0.1rem;
-        margin-bottom: 0px;
+      &Date {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: right;
       }
-    }
 
-    &ImageWidth {
-      width: 100%;
-      height: auto;
-    }
+      &Title {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
 
-    &Description {
-      display: none;
+      &Description {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: .9rem;
+      }
+
     }
   }
+}
 }
