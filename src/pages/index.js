@@ -7,7 +7,6 @@ const LOAD_MORE_STEP = 4;
 
 export default function Home({ initialPosts, total }) {
   const [posts, setPosts] = useState(initialPosts);
-  console.log(posts);
   const [loadedAmount, setLoadedAmount] = useState(LOAD_MORE_STEP);
   const [loading, setLoading] = useState(false);
 
