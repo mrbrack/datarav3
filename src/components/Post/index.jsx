@@ -13,7 +13,7 @@ const Post = ({
   slug,
   published_date,
 }) => {
-  const date = format(new Date(published_date), "MM/dd/yy");
+  const date = format(new Date(published_date), "dd/MM/yy");
   
   if (description.length > 67) {
     description = description.slice(0, 67).concat("...");
