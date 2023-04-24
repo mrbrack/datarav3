@@ -1,5 +1,12 @@
 import { loadData } from "./api/post";
-import { Section, SocialNetworks, PostGrid, Post, Button, Flexy } from "@/components";
+import {
+  Section,
+  SocialNetworks,
+  PostGrid,
+  Post,
+  Button,
+  Flexy,
+} from "@/components";
 import { useState } from "react";
 import Head from "next/head";
 
@@ -40,6 +47,7 @@ export default function Home({ initialPosts, total }) {
       <SocialNetworks />
       <Section type="top" conditions="lvp">
         <video
+          poster="/planet_header_lvp_cover.png"
           width="1300"
           height="650"
           className="header-video"
@@ -56,6 +64,7 @@ export default function Home({ initialPosts, total }) {
       </Section>
       <Section type="top" conditions="svp">
         <video
+          poster="/planet_header_svp_cover.png"
           width="1080"
           height="1920"
           className="header-video"
