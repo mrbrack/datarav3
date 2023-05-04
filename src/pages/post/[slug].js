@@ -52,7 +52,11 @@ const Post = ({ post }) => {
             height="1080"
             className={styles.postImageWidth}
             />
-          : <YouTube videoId={post.video_url} />
+          : <YouTube videoId={post.video_url} className="yt-embed" opts={{
+            playerVars: {
+              autoplay: 1,
+            },
+          }}/>
         } 
         <Content body={post.body} />
       </Section>
