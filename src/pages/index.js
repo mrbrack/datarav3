@@ -52,14 +52,18 @@ export default function Home({ initialPosts, total }) {
             alt="generative wormhole in greyscale with a vintage television/CRT monitor aesthetic."
             width="1300"
             height="650"
+            placeholder="blur"
+            priority
             />
       </Section>
       <Section type="top" conditions="svp">
       <Image
             src="/header_svp.jpg"
             alt="generative wormhole in greyscale with a vintage television/CRT monitor aesthetic."
-            width="1300"
-            height="650"
+            width="1080"
+            height="1350"
+            placeholder="blur"
+            priority
             />
       </Section>
       <Section type="standard">
