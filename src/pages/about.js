@@ -1,6 +1,7 @@
 import { Section } from "@/components";
 import Image from "next/image";
 import Head from "next/head";
+import YouTube from 'react-youtube';
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
         <link rel="canonical" href="https://dararav3.art/about" />
       </Head>
       <Section type="two-column-top">
-        <Image
+      <Image
           src="/datarav3_about_me.jpg"
           alt="Nigel Fryatt working in the EMERGE creative studio at Sion Hill, Bath."
           width="1080"

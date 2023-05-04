@@ -9,6 +9,7 @@ import { urlFor } from "@/lib/client";
 import styles from "./styles.module.scss";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useRouter } from "next/router";
+import YouTube from 'react-youtube';
 
 const Post = ({ post }) => {
   const router = useRouter();
@@ -42,13 +43,17 @@ const Post = ({ post }) => {
         </div>
       </section>
       <Section type="two-column">
-        <Image
-          src={urlFor(post.image).url()}
-          alt={post.image.caption}
-          width="1080"
-          height="1080"
-          className={styles.postImageWidth}
-        />
+        {
+          post.image 
+          ? <Image
+            src={urlFor(post.image).url()}
+            alt={post.image.caption}
+            width="1080"
+            height="1080"
+            className={styles.postImageWidth}
+            />
+          : <YouTube videoId={post.video_url} />
+        } 
         <Content body={post.body} />
       </Section>
     </>

@@ -47,7 +47,6 @@ export default {
       name: 'image',
       type: 'image',
       title: 'Image',
-      validation: (Rule) => Rule.required(),
       options: {
         hotspot: true,
       },
@@ -64,6 +63,21 @@ export default {
           title: 'Attribution',
         },
       ],
+    },
+    {
+      name: 'video_url',
+      type: 'string',
+      title: 'videoUrl',
+    },
+    {
+      name: 'videoWidth',
+      type: 'string',
+      title: 'videoWidth',
+    },
+    {
+      name: 'videoHeight',
+      type: 'string',
+      title: 'videoHeight',
     },
     {
       name: 'description',
