@@ -1,10 +1,11 @@
 .footer {
   bottom: 0;
-  border-top: #323232 solid 1px;
   width: 100%;
-  max-width: 1300px;
-  padding: 2rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  background: #393939;
+  color: #F5F5F5;
 }
