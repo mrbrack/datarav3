@@ -16,6 +16,9 @@ const About = () => {
         />
         <link rel="canonical" href="https://dararav3.art/about" />
       </Head>
+      <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
+        about
+      </Section>
       <Section type="two-column-top">
       <Image
           src="/datarav3_about_me.jpg"
@@ -25,22 +28,31 @@ const About = () => {
         />
         <div className="inner-container">
           <p>
-            datarav3 (Nigel Fryatt) is a generative artist who uses creative
+            I use creative
             programming to explore the intersection between technology and human
-            emotion. Through his work, he questions whether code can create
+            expression. 
+
+            <ul>
+            <li>Creative technology</li> 
+            <li>Art</li> 
+            <li>Workshops</li> 
+            <li>Collaboration</li> 
+            </ul>
+            
+            
+            Through my work, I question whether code can create
             experiences that allow us to access feelings that are intimate and
-            human. Broadly, his work acts as a criticism of the fascination
-            capitalism has with technology, as he fiercely denies the world that
-            this has created.
+            human. Broadly, my work acts as a criticism of the fascination
+            capitalism has with technology.
           </p>
 
           <p>
-            datarav3 started his programming journey at the age of thirteen,
-            inspired by his father who was forever tinkering with computers and
-            servers throughout his childhood. Now, he splits his time between
-            making websites as a freelance web developer and creating generative
-            art. He is based in Bristol, UK and works out of the EMERGE creative
-            studio where he is a mentor in Creative Media.
+            I started my programming journey at the age of thirteen,
+            inspired by my father who was forever tinkering with computers and
+            servers throughout my childhood. Now, I split my time between
+            making websites as a freelance web developer, delivering workshops and creating generative
+            art. I am based in Bristol, UK and work out of Bath Spa University's EMERGE creative
+            studio where I am a mentor in Creative Media.
           </p>
           <p>
             “Algorithms have the potential to evoke powerful and intimate

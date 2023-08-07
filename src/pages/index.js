@@ -45,27 +45,10 @@ export default function Home({ initialPosts, total }) {
         />
         <link rel="canonical" href="https://dararav3.art" />
       </Head>
-      <SocialNetworks />
-      <Section type="top" conditions="lvp">
-      <Image
-            src="/header_lvp.jpg"
-            alt="generative wormhole in greyscale with a vintage television/CRT monitor aesthetic."
-            width="1300"
-            height="650"
-            priority
-            />
+      <Section type="headerAnimated" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
+        creative tech & generative art
       </Section>
-      <Section type="top" conditions="svp">
-      <Image
-            src="/header_svp.jpg"
-            alt="generative wormhole in greyscale with a vintage television/CRT monitor aesthetic."
-            width="1080"
-            height="1350"
-            priority
-            />
-      </Section>
-      <Section type="standard">
-        <h2>work</h2>
+      <Section type="standard" title="lastest work" titleType="h2Top">
         <PostGrid>
           {posts.map((post) => (
             <Post key={post._id} {...post} />

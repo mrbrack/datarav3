@@ -47,6 +47,9 @@ const Contact = () => {
         />
         <link rel="canonical" href="https://dararav3.art/contact" />
       </Head>
+      <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
+        contact
+      </Section>
       <Section type="two-column-top">
         <div>
           <Image
@@ -55,7 +58,7 @@ const Contact = () => {
             width="1080"
             height="1080"
           />
-          <small className="extra">Image © Bath Spa University (Niklas Aarre)</small>
+          <p className="extra">Image © Bath Spa University (Niklas Aarre)</p>
         </div>
         <div className="inner-container">
           {isSubmitted ? (

@@ -1,0 +1,16 @@
+.title {
+  margin: 0;
+  border-left: 0px;
+  border-right: 0px;
+  text-align: center;
+
+  &Top {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  &Bottom {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}

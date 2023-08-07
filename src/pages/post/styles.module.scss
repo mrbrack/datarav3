@@ -20,11 +20,11 @@
 .back {
   display: flex;
   align-items: center;
-  padding: 1rem 0;
-  max-width: 1300px;
+  padding: 1rem 6rem;
   width: 100%;
   box-sizing: border-box;
-  border-bottom: solid black 1px;
+  border-bottom: solid #393939 1px;
+  border-top: solid #393939 1px;
 
   &Button {
     display: flex;
