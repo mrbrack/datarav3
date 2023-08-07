@@ -56,8 +56,8 @@ const About = () => {
           </p>
           <p>
             “Algorithms have the potential to evoke powerful and intimate
-            emotions, we just don’t talk about it enough. Or, perhaps, the types
-            of conversations programmers tend to have about algorithms don’t
+            emotions, we just don&apos;t talk about it enough. Or, perhaps, the types
+            of conversations programmers tend to have about algorithms don&apos;t
             afford people to think in those ways. Yes, computer science is
             important, but so is art.”
           </p>
