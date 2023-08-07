@@ -59,6 +59,7 @@ export default function Home({ initialPosts, total }) {
             style={{
               display: "flex",
               justifyContent: "center",
+              marginTop: "3rem"
             }}
           >
             <Button disabled={loading} onClick={getMorePosts}>
