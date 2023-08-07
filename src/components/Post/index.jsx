@@ -29,8 +29,8 @@ const Post = ({
           <Image
             src={urlFor(thumbnail).url()}
             alt={thumbnail.caption}
-            width="200"
-            height="200"
+            width="400"
+            height="400"
             className={styles.postContentImageContainerImage}
           />
         </div>

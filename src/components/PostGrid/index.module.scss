@@ -1,7 +1,17 @@
 .postGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3rem;
+    column-gap: 6rem;
+    row-gap: 3rem;
+  }
+
+  @media only screen and (min-device-width: 801px) and (max-device-width:1024px) {
+    .postGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    }
   }
   
   @media only screen and (max-width: 800px) {
