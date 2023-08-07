@@ -86,6 +86,22 @@ const Section = ({ children, className, type, title, titleType, img, alt}) => {
     }
   }
 
+  if (type === "portfolio") {
+    if(title) {
+      return (
+        <section className={cl(className, styles.sectionTopTitle)}>
+          {children}
+        </section>
+      ); 
+    } else {
+    return (
+      <section className={cl(className, styles.sectionPortfolio)}>
+        {children}
+      </section>
+    );
+    }
+  }
+
   if (type === "two-column-top") {
     if(title) {
       return (

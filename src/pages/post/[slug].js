@@ -42,7 +42,7 @@ const Post = ({ post }) => {
           </div>
         </div>
       </section>
-      <Section type="two-column">
+      <Section type="portfolio">
         {
           post.image 
           ? <Image
