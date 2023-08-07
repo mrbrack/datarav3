@@ -8,8 +8,8 @@ button {
 
 html,
 body {
-  background: #fbfbfb;
-  background: #f4f5f0;
+  background: #fff;
+  color: #252525;
 }
 
 button {
@@ -28,8 +28,8 @@ button {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-small.extra {
-  font-size: .75rem;
+p.extra {
+  margin-top: .25rem !important;
 }
 
 p {
@@ -80,34 +80,12 @@ h2,
 .h2 {
   font-size: 1.9rem;
   line-height: 1.25;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-family: "stolzl", sans-serif;
   font-style: normal;
   font-weight: 500;
   text-align: center;
-  position: relative;
-  overflow: hidden;
 }
-
-h2:before,
-h2:after {
- background-color: #333;
- content: "";
- display: inline-block;
- height: 1px;
- position: relative;
- vertical-align: middle;
- width: 50%;
-}
-h2:before {
- right: 0.5em;
- margin-left: -50%;
-}
-h2:after {
- left: 0.5em;
- margin-right: -50%;
-}
-
 
 h3,
 .h3 {
@@ -130,7 +108,7 @@ h3,
 h4,
 .h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.3;
   margin-bottom: 0px;
   font-weight: 400;
@@ -161,29 +139,13 @@ h6,
 img {
   width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .center {
   text-align: center;
-}
-
-.header-video {
-  max-width: 100%;
-  height: auto;
-}
-
-.svp {
-  display: none !important;
-}
-
-@media only screen and (max-width: 800px) {
-  .svp {
-    display: block !important;
-  }
-
-  .lvp {
-    display: none !important;
-  }
 }
 
 .inner-container {
@@ -209,9 +171,10 @@ textarea {
   width: 100%;
   min-height: 2rem;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   border: none;
+  border: 1px solid #999;
 }
 
 input:focus,
