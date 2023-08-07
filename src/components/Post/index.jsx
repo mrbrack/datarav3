@@ -15,7 +15,7 @@ const Post = ({
 }) => {
   const date = format(new Date(published_date), "dd/MM/yy");
   
-  if (description.length > 67) {
+  if (description.length > 300) {
     description = description.slice(0, 67).concat("...");
   }
 
@@ -35,9 +35,8 @@ const Post = ({
           />
         </div>
         <div className={styles.postContentDetails}>
-          <p className={styles.postContentDetailsDate}>{date}</p>
-          <h3 className={styles.postContentDetailsTitle}>{title}</h3>
-          <p className={styles.postContentDetailsDescription}>{description}</p>
+          <h4 className={styles.postContentDetailsTitle}>{title}</h4>
+         
         </div>
       </div>
     </Link>

@@ -3,16 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
   min-height: 100vh;
 }
 
 .main {
-  max-width: 1300px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 800px) {
   .wrapper {
-    padding: 0 1rem;
+    padding: 0 0rem;
   }
 }

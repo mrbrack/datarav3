@@ -14,12 +14,9 @@ const Navbar = (className) => {
   return (
     <header className={cl(className, styles.header)}>
       <nav className={cl(className, styles.nav)}>
-        <div>
           <Link href="/" className={cl(className, styles.logo)}>
             datarav3
           </Link>
-          <h1 className="h4">generative artist - Bristol, UK.</h1>
-        </div>
         <div className={cl(className, styles.nav_bar_svp)}>
           <button
             onClick={() => {
