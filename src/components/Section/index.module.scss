@@ -8,7 +8,7 @@
       position: relative;
       margin-top: -100px;
       width: 100vw;
-      height: 33vh;
+      height: 25vh;
       max-width: 100% !important;
   
       &Heading {
@@ -19,8 +19,9 @@
         text-align: center;
         color: #fff;
         padding: 0;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 400;
         width: 100%;
       }
     }
@@ -42,6 +43,7 @@
       padding: 0;
       font-size: 2.5rem;
       line-height: 2.5rem;
+      font-weight: 400;
       width: 100%;
     }
   }
@@ -93,7 +95,7 @@
     margin: 0;
     padding: 3rem 6rem;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1.25fr;
     gap: 3rem;
 
     &Title {
@@ -110,7 +112,7 @@
     padding: 3rem 6rem;
     padding-bottom: 3rem;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
 
     &Title {
@@ -134,7 +136,7 @@
         position: relative;
         margin-top: -100px;
         width: 100vw;
-        height: 33vh;
+        height: 25vh;
         max-width: 100% !important;
     
         &Heading {
@@ -145,8 +147,9 @@
           text-align: center;
           color: #fff;
           padding: 0;
-          font-size: 2.5rem;
-          line-height: 2.5rem;
+          font-size: 2rem;
+          line-height: 2rem;
+          font-weight: 400;
           width: 100%;
         }
       }
@@ -236,7 +239,7 @@
       margin: 0;
       padding: 3rem 1.5rem;
       display: grid;
-      grid-auto-flow: column;
+      grid-template-columns: 1fr;
       gap: 3rem;
   
       &Title {
@@ -261,7 +264,7 @@
         position: relative;
         margin-top: -100px;
         width: 100vw;
-        height: 33vh;
+        height: 25vh;
         max-width: 100% !important;
     
         &Heading {
@@ -272,8 +275,9 @@
           text-align: center;
           color: #fff;
           padding: 0;
-          font-size: 2.5rem;
-          line-height: 2.5rem;
+          font-size: 2rem;
+          line-height: 2rem;
+          font-weight: 400;
           width: 100%;
         }
       }
@@ -309,14 +313,14 @@
   
     &Standard {
       margin: 0;
-      padding: 1rem 1rem;
+      padding: 1.5rem 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
   
       &Title {
       margin: 0;
-      padding: 0rem 1rem;
+      padding: 0rem 1.5rem;
       padding-bottom: 3rem;
       display: flex;
       flex-direction: column;
@@ -326,10 +330,10 @@
   
     &TwoColumn {
       margin: 0;
-      padding: 1rem 1rem;
+      padding: 1.5rem 1.5rem;
       display: grid;
       grid-auto-flow: row;
-      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
   
       &Title {
@@ -343,10 +347,10 @@
   
     &TwoColumnTop {
       margin: 0;
-      padding: 1rem 1rem;
+      padding: 1.5rem 1.5rem;
       display: grid;
-      grid-auto-flow: row;
-      grid-auto-columns: 1fr;
+      grid-auto-flow: row;    
+      grid-template-columns: 1fr;
       gap: 1rem;
   
       &Title {
@@ -362,7 +366,7 @@
       margin: 0;
       padding: 1.5rem 1.5rem;
       display: grid;
-      grid-auto-flow: row;
+      grid-template-columns: 1fr;
       gap: 1.5rem;
   
       &Title {

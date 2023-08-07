@@ -22,7 +22,7 @@ const Navbar = (className) => {
             onClick={() => {
               setNavbar(!navbar);
             }}
-            style={{ color: "#FF99CF" }}
+            style={{ color: "#252525" }}
           >
             {navbar ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
