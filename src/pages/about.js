@@ -30,16 +30,8 @@ const About = () => {
           <p>
             I use creative
             programming to explore the intersection between technology and human
-            expression. 
-
-            <ul>
-            <li>Creative technology</li> 
-            <li>Art</li> 
-            <li>Workshops</li> 
-            <li>Collaboration</li> 
-            </ul>
-            
-            
+            expression. </p>
+            <p>
             Through my work, I question whether code can create
             experiences that allow us to access feelings that are intimate and
             human. Broadly, my work acts as a criticism of the fascination

@@ -6,6 +6,8 @@ import Head from "next/head";
 import Script from "next/script"
 import { useRouter } from "next/router"
 import { useEffect } from "react"
+import CookieConsent from "react-cookie-consent";
+
 import * as gtag from "@/lib/gtag.js"
 
 export default function App({ Component, pageProps }) {
@@ -57,6 +59,7 @@ export default function App({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <CookieConsent enableDeclineButton>This website uses cookies to enhance the user experience.</CookieConsent>
     </>
   );
 }
