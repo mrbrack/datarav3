@@ -101,9 +101,9 @@ const Contact = () => {
                 ></textarea>
               </p>
               <p>
-                <button id="submit-button" type="submit">
+                <Button id="submit-button" type="submit">
                   submit
-                </button>
+                </Button>
               </p>
             </form>
           )}

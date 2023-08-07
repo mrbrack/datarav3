@@ -14,7 +14,7 @@ const Section = ({ children, className, type, title, titleType, img, alt}) => {
         {children}
         </h1>
         <style jsx>{`
-          section {background-image: url(${img})};
+          section {background-image: url(${img}); background-size: cover;};
       `}</style>
         </section>
       );
