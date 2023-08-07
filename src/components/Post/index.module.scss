@@ -1,9 +1,7 @@
 .post {
   &Content {
-    display: grid;
-    grid-template-columns: .4fr 1fr;
-    gap: 0.25rem;
-    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
 
     &ImageContainer {
       position: relative;
@@ -15,10 +13,18 @@
     }
 
     &Details {
-      padding: 1rem 2rem;
+      padding-top: 1.25rem;
       display: flex;
-      justify-content: center;
       flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      position: relative;
+
+      &Title {
+        margin-bottom: 0rem;
+        font-weight: 400;
+        color: #252525;
+      }
 
       &Description {
         line-height: 1.6;
@@ -26,6 +32,9 @@
       }
 
       &Date {
+        position: absolute;
+        right: 10px;
+        top: 1rem;
         font-size: .9rem;
         margin-bottom: 0.5rem;
         color: #374049;
