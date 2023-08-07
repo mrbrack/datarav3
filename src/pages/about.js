@@ -51,7 +51,7 @@ const About = () => {
             inspired by my father who was forever tinkering with computers and
             servers throughout my childhood. Now, I split my time between
             making websites as a freelance web developer, delivering workshops and creating generative
-            art. I am based in Bristol, UK and work out of Bath Spa University's EMERGE creative
+            art. I am based in Bristol, UK and work out of Bath Spa University&apos;s EMERGE creative
             studio where I am a mentor in Creative Media.
           </p>
           <p>
