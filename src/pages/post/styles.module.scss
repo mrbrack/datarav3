@@ -6,6 +6,10 @@
   &Date {
     margin-bottom: 1em;
   }
+
+  &EmptyBlock {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 800px) {

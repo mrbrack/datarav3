@@ -59,6 +59,10 @@ const Post = ({ post }) => {
           }}/>
         } 
         <Content body={post.body} />
+        {
+          post.additional_body ? <Content body={post.additional_body} />
+          : <div className={styles.postEmptyBlock} />
+        }
       </Section>
     </>
   );

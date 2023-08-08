@@ -110,5 +110,19 @@ export default {
         },
       ],
     },
+    {
+      title: 'Additional Content',
+      name: 'additional_body',
+      type: 'array',
+      validation: false,
+      of: [
+        {
+          type: 'block',
+        },
+        {
+          type: 'image',
+        },
+      ],
+    },
   ],
 }
