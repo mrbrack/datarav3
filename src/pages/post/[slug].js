@@ -60,6 +60,7 @@ const Post = ({ post }) => {
         } 
         <Content body={post.body} />
         {
+          // Used to hide/display additional post content if present. Uses .postEmptyBlock class to display: none, currently
           post.additional_body ? <Content body={post.additional_body} />
           : <div className={styles.postEmptyBlock} />
         }
