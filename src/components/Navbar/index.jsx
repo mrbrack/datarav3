@@ -55,14 +55,14 @@ const Navbar = (className) => {
             </li>
             <li>
               <Link
-                href="/work"
+                href="/portfolio"
                 className={
-                  currentRoute === "/work"
+                  currentRoute === "/portfolio"
                     ? styles.nav_bar_lvp_active
                     : styles.nav_bar_lvp_not_active
                 }
               >
-                work
+                portfolio
               </Link>
             </li>
             <li>
@@ -110,12 +110,12 @@ const Navbar = (className) => {
           </li>
           <li>
             <Link
-              href="/work"
+              href="/portfolio"
               onClick={() => {
                 setNavbar(!navbar);
               }}
             >
-              work
+              portfolio
             </Link>
           </li>
           <li>

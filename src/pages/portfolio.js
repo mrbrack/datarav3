@@ -31,7 +31,7 @@ const Work = ({ initialPosts, total }) => {
     <>
       <Head>
         <title>
-          datarav3 - work - generative artist based in Bristol, UK.
+          datarav3 - portfolio - generative artist based in Bristol, UK.
         </title>
         <meta
           name="description"
@@ -40,7 +40,7 @@ const Work = ({ initialPosts, total }) => {
         <link rel="canonical" href="https://dararav3.art/about" />
       </Head>
       <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
-        work
+        portfolio
       </Section>
       <Section type="standard">
         <PostGrid>
