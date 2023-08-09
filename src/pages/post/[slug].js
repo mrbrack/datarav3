@@ -20,14 +20,14 @@ const Post = ({ post }) => {
       <NextSeo
         title = {`${post.meta_title} | datarav3:`}
         description = {post.description}
-        canonical= {`https://www.datarav3.art/${post.slug.current}`}
+        canonical= {`https://www.datarav3.art/post/${post.slug.current}`}
         openGraph={{
           type: 'article',
           article: {
               publishedTime: post._createdAt,
               modifiedTime: post._updatedAt,
               authors: [
-                  'https://www.datarav3.art/',
+                  'https://www.datarav3.art',
               ],
           },
           url: `https://www.datarav3.art/${post.slug.current}`,
