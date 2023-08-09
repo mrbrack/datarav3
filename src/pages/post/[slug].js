@@ -32,16 +32,10 @@ const Post = ({ post }) => {
           },
           url: `https://www.datarav3.art/${post.slug.current}`,
           images: {
-              url: post.image 
-              ? post.image
-              : '/assets/og/og_temp.jpg',
-              width: post.image 
-              ? 1000
-              : 1200,
-              height: post.image 
-              ? 1000
-              : 1200,
-              alt: "featured image",
+            url: 'https://www.datarav3.art/assets/og/og_temp.jpg',
+            width: 1200,
+            height: 630,
+            alt: "featured image",
           },
           site_name: 'datarav3'
       }}

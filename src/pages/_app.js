@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
                     url: 'https://www.datarav3.art',
                     siteName: 'datarav3',
                     images: {
-                      url: '/assets/og/og_temp.jpg',
+                      url: 'https://www.datarav3.art/assets/og/og_temp.jpg',
                       width: 1200,
                       height: 630,
                       alt: 'the word datarav3 placed over a grid background coloured using grey, pink and green',
