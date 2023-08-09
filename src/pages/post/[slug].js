@@ -34,7 +34,7 @@ const Post = ({ post }) => {
           images: {
               url: post.image 
               ? post.image
-              : 'assets/og/og_temp.jpg',
+              : '/assets/og/og_temp.jpg',
               width: post.image 
               ? 1000
               : 1200,
