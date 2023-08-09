@@ -1,21 +1,16 @@
 import { Section } from "@/components";
 import Image from "next/image";
 import Head from "next/head";
-import YouTube from 'react-youtube';
+import {NextSeo} from 'next-seo';
 
 const About = () => {
   return (
     <>
-      <Head>
-        <title>
-          datarav3 - about - generative artist based in Bristol, UK.
-        </title>
-        <meta
-          name="description"
-          content="datarav3 (Nigel Fryatt) is a generative artist who uses creative programming to discovers the intersection between technology and human emotion."
-        />
-        <link rel="canonical" href="https://dararav3.art/about" />
-      </Head>
+    <NextSeo
+            title="about | datarav3: creative technology and generative art"
+            description="Using creative programming to explore the intersection between technology and human expression."
+            canonical="https://www.datarav3.art/about"
+      />
       <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
         about
       </Section>

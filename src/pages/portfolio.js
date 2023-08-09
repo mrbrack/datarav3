@@ -1,8 +1,7 @@
 import { Section, PostGrid, Post, Button } from "@/components";
-import Image from "next/image";
-import Head from "next/head";
 import { useState } from "react";
 import { loadData } from "./api/post";
+import {NextSeo} from 'next-seo';
 
 const LOAD_MORE_STEP = 8;
 
@@ -29,16 +28,11 @@ const Work = ({ initialPosts, total }) => {
   };
   return (
     <>
-      <Head>
-        <title>
-          datarav3 - portfolio - generative artist based in Bristol, UK.
-        </title>
-        <meta
-          name="description"
-          content="datarav3 (Nigel Fryatt) is a generative artist who uses creative programming to explore the intersection between technology and human emotion."
-        />
-        <link rel="canonical" href="https://dararav3.art/about" />
-      </Head>
+      <NextSeo
+            title="portfolio | datarav3: creative technology and generative art"
+            description="Explore my portfolio of work spanning generative art, creative technology, audio and workshops"
+            canonical="https://www.datarav3.art/portfolio"
+      />
       <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
         portfolio
       </Section>

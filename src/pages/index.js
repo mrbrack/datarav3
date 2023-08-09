@@ -37,14 +37,6 @@ export default function Home({ initialPosts, total }) {
 
   return (
     <div>
-      <Head>
-        <title>datarav3 - generative artist based in Bristol, UK.</title>
-        <meta
-          name="description"
-          content="Generative artist, creative coder and web developer exploring the infinite possibilities of code."
-        />
-        <link rel="canonical" href="https://dararav3.art" />
-      </Head>
       <Section type="headerAnimated" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
         creative tech & generative art
       </Section>

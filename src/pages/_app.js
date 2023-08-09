@@ -5,6 +5,7 @@ import Head from "next/head";
 import Script from "next/script"
 import CookieConsent from "react-cookie-consent";
 import { Analytics } from '@vercel/analytics/react';
+import {DefaultSeo} from 'next-seo';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -18,12 +19,29 @@ export default function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
-
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
-
-      <meta property="og:image" content="/assets/og/og_temp.jpg" key="ogimage" />
       </Head>
+      <DefaultSeo
+                title="datarav3 - creative technology & generative art"
+                description="I use computer programming in creative and artistic contexts. Based in Bristol, UK."
+                openGraph={{
+                    type: 'website',
+                    locale: 'en_gb',
+                    url: 'https://www.datarav3.art',
+                    siteName: 'datarav3',
+                    images: {
+                      url: 'assets/og/og_temp.jpg',
+                      width: 1200,
+                      height: 630,
+                      alt: 'the word datarav3 placed over a grid background coloured using grey, pink and green',
+                  },
+                }}
+                twitter={{
+                    handle: '@datarav3',
+                    site: 'datarav3.art',
+                    cardType: 'summary',
+                }}
+            />
       <Layout>
         <Component {...pageProps} />
       </Layout>

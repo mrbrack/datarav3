@@ -10,20 +10,42 @@ import styles from "./styles.module.scss";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useRouter } from "next/router";
 import YouTube from 'react-youtube';
+import {NextSeo} from 'next-seo';
 
 const Post = ({ post }) => {
   const router = useRouter();
   const date = format(new Date(post.published_date), "dd MMM yyy");
   return (
     <>
-      <Head>
-        <title>{"datarav3 - " + post.meta_title}</title>
-        <meta name="description" content={post.description} />
-        <link
-          rel="canonical"
-          href={`https://datarav3.art/${post.slug.current}`}
-        />
-      </Head>
+      <NextSeo
+        title = {`${post.meta_title} | datarav3: creative technology and generative art`}
+        description = {post.description}
+        canonical= {`https://www.datarav3.art/${post.slug.current}`}
+        openGraph={{
+          type: 'article',
+          article: {
+              publishedTime: post._createdAt,
+              modifiedTime: post._updatedAt,
+              authors: [
+                  'https://www.datarav3.art/',
+              ],
+          },
+          url: `https://www.datarav3.art/${post.slug.current}`,
+          images: {
+              url: post.image 
+              ? post.image
+              : 'assets/og/og_temp.jpg',
+              width: post.image 
+              ? 1000
+              : 1200,
+              height: post.image 
+              ? 1000
+              : 1200,
+              alt: "featured image",
+          },
+          site_name: 'datarav3'
+      }}
+      />
       <section className={styles.back}>
         <button
           type="button"
