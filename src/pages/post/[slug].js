@@ -34,7 +34,7 @@ const Post = ({ post }) => {
           images: [
               {
                 url: post.image 
-                  ? urlFor(post.image).url()
+                  ? `${urlFor(post.image).url()}`
                   : '/assets/og/og_temp.jpg',
                 width: post.image 
                   ? 1000
