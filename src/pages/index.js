@@ -8,8 +8,6 @@ import {
   Flexy,
 } from "@/components";
 import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
 
 const LOAD_MORE_STEP = 4;
 
@@ -17,7 +15,6 @@ export default function Home({ initialPosts, total }) {
   const [posts, setPosts] = useState(initialPosts);
   const [loadedAmount, setLoadedAmount] = useState(LOAD_MORE_STEP);
   const [loading, setLoading] = useState(false);
-
   const showLoadButton = total > loadedAmount;
 
   const getMorePosts = async () => {
@@ -29,6 +26,7 @@ export default function Home({ initialPosts, total }) {
       ).then((response) => response.json());
       setLoadedAmount(loadedAmount + LOAD_MORE_STEP);
       setPosts([...posts, ...data.posts]);
+      setLoading(false);
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -55,7 +53,9 @@ export default function Home({ initialPosts, total }) {
             }}
           >
             <Button disabled={loading} onClick={getMorePosts}>
-              load more posts...
+              {loading ? "loading" :
+              "load more posts..."
+              }
             </Button>
           </div>
         )}

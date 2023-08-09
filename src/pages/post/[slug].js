@@ -18,7 +18,7 @@ const Post = ({ post }) => {
   return (
     <>
       <NextSeo
-        title = {`${post.meta_title} | datarav3: creative technology and generative art`}
+        title = {`${post.meta_title} | datarav3:`}
         description = {post.description}
         canonical= {`https://www.datarav3.art/${post.slug.current}`}
         openGraph={{
