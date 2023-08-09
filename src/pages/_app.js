@@ -4,6 +4,7 @@ import { Layout } from "@/components";
 import Head from "next/head";
 import Script from "next/script"
 import CookieConsent from "react-cookie-consent";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
       <CookieConsent enableDeclineButton>This website uses cookies to enhance the user experience.</CookieConsent>
+      <Analytics />
     </>
   );
 }
