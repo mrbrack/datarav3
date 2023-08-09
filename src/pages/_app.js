@@ -28,13 +28,15 @@ export default function App({ Component, pageProps }) {
                     type: 'website',
                     locale: 'en_gb',
                     url: 'https://www.datarav3.art',
+                    images: [ 
+                      {
+                        url: 'https://www.datarav3.art/assets/og/og_temp.jpg',
+                        width: 1200,
+                        height: 630,
+                        alt: 'the word datarav3 placed over a grid background coloured using grey, pink and green',
+                      },
+                    ],
                     siteName: 'datarav3',
-                    images: {
-                      url: 'https://www.datarav3.art/assets/og/og_temp.jpg',
-                      width: 1200,
-                      height: 630,
-                      alt: 'the word datarav3 placed over a grid background coloured using grey, pink and green',
-                  },
                 }}
                 twitter={{
                     handle: '@datarav3',
