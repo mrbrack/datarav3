@@ -33,7 +33,6 @@ const Section = ({ children, className, type, title, titleType, img, alt}) => {
     );
 }
 
-
   if (type === "standard") {
     if(title) {
       return (

@@ -3,18 +3,17 @@ import { useState } from "react";
 import { loadData } from "./api/post";
 import {NextSeo} from 'next-seo';
 
-const LOAD_MORE_STEP = 8;
+const LOAD_MORE_STEP = 4; // controls how many initial posts are shown
 
 const Work = ({ initialPosts, total }) => {
   const [posts, setPosts] = useState(initialPosts);
   const [loadedAmount, setLoadedAmount] = useState(LOAD_MORE_STEP);
   const [loading, setLoading] = useState(false);
 
-  const showLoadButton = total > loadedAmount;
+  const showLoadButton = total > loadedAmount; // will show a load more button if total number of posts is more than initial amount
 
-  const getMorePosts = async () => {
+  const getMorePosts = async () => { // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
     setLoading(true);
-
     try {
       const data = await fetch(
         `api/post?start=${loadedAmount}&end=${loadedAmount + LOAD_MORE_STEP}`
@@ -60,7 +59,7 @@ const Work = ({ initialPosts, total }) => {
 };
 
 export async function getServerSideProps() {
-  const { posts, total } = await loadData(0, LOAD_MORE_STEP);
+  const { posts, total } = await loadData(0, LOAD_MORE_STEP); // loads an initial amount of posts imto props
   return {
     props: {
       initialPosts: posts,

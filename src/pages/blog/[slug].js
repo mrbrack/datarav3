@@ -1,5 +1,7 @@
 import React from "react";
-import { Content, Section } from "@/components";
+import Head from "next/head";
+import Link from "next/link";
+import { Article, Content, Section } from "@/components";
 import Image from "next/image";
 import { client } from "@/lib/client";
 import { format } from "date-fns";

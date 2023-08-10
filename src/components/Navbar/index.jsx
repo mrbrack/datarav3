@@ -2,10 +2,28 @@ import React from "react";
 import styles from "./index.module.scss";
 import cl from "classnames";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineTwitter, AiOutlineGithub } from "react-icons/ai";
 import { useRouter } from "next/router";
+
+// All social profiles
+const socialNetwork = [
+  {
+    id: 1,
+    href: "https://www.instagram.com/datarav3",
+    icon: AiOutlineInstagram,
+  },
+  {
+    id: 2,
+    href: "https://twitter.com/datarav3",
+    icon: AiOutlineTwitter,
+  },
+  {
+    id: 3,
+    href: "https://github.com/mrbrack",
+    icon: AiOutlineGithub,
+  }
+];
 
 const Navbar = (className) => {
   const router = useRouter();
@@ -77,6 +95,20 @@ const Navbar = (className) => {
                 contact
               </Link>
             </li>
+            {socialNetwork.map((socialNetwork) => (
+          <li key={socialNetwork.id} className={styles.social_item}>
+            <Link
+              href={socialNetwork.href}
+              target="_blank"
+              className={styles.listLink}
+            >
+              {React.createElement(socialNetwork.icon, {
+                color: "black",
+                size: 25,
+              })}
+            </Link>
+          </li>
+        ))}
           </ul>
         </div>
       </nav>
@@ -128,6 +160,22 @@ const Navbar = (className) => {
               contact
             </Link>
           </li>
+        </ul>
+        <ul className={cl(className, styles.nav_items_socials)}>
+        {socialNetwork.map((socialNetwork) => (
+          <li key={socialNetwork.id} className={styles.social_item}>
+            <Link
+              href={socialNetwork.href}
+              target="_blank"
+              className={styles.listLink}
+            >
+              {React.createElement(socialNetwork.icon, {
+                color: "black",
+                size: 25,
+              })}
+            </Link>
+          </li>
+        ))}
         </ul>
       </nav>
     </header>

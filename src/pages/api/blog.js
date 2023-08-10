@@ -15,15 +15,15 @@ export default async function post(req, res) {
   });
 }
 
-export async function loadData(start, end) {
+export async function loadBlogData(start, end) {
   const query = `{
-    "posts": *[_type == "post"] | order(published_date desc) [${start}...${end}] {_id, published_date, title, slug, description, image, thumbnail, video_url},
-    "total": count(*[_type == "post"])
+    "blogPosts": *[_type == "blog"] | order(published_date desc) [${start}...${end}] {_id, published_date, title, slug, description, image, thumbnail, video_url},
+    "blogTotal": count(*[_type == "blog"])
   }`;
 
-  const { posts, total } = await client.fetch(query);
+  const { blogPosts, blogTotal } = await client.fetch(query);
   return {
-    posts,
-    total,
+    blogPosts,
+    blogTotal,
   };
 }

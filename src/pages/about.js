@@ -1,6 +1,5 @@
 import { Section } from "@/components";
 import Image from "next/image";
-import Head from "next/head";
 import {NextSeo} from 'next-seo';
 
 const About = () => {
