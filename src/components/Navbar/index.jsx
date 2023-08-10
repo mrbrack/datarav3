@@ -10,23 +10,23 @@ import { useRouter } from "next/router";
 // All social profiles
 const socialNetwork = [
   {
-    id: 4,
+    id: 1,
     href: "https://editor.p5js.org/datarav3/sketches",
     icon: FaStarOfLife,
     text: "p5.js"
   },
   {
-    id: 3,
+    id: 2,
     href: "https://github.com/mrbrack",
     icon: AiOutlineGithub,
   },
   {
-    id: 1,
+    id: 3,
     href: "https://www.instagram.com/datarav3",
     icon: AiOutlineInstagram,
   },
   {
-    id: 2,
+    id: 4,
     href: "https://twitter.com/datarav3",
     icon: AiOutlineTwitter,
   }
@@ -105,11 +105,10 @@ const Navbar = (className) => {
               </Link>
             </li>
             {socialNetwork.map((socialNetwork) => (
-            <li key={socialNetwork.id} className={styles.social_item}>
+            <li key={socialNetwork.id} style={{marginLeft: "0", marginRight: ".425rem"}}>
             <Link
               href={socialNetwork.href}
               target="_blank"
-              className={styles.socialNetworkListLink}
             >
               {React.createElement(socialNetwork.icon, {
                 color: "black",

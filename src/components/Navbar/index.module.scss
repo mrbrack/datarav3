@@ -30,7 +30,7 @@
 
   & li {
 
-    margin-left: 0.85rem;
+    margin-right: 0.85rem;
 
     & a {
       color: #252525;
@@ -104,7 +104,7 @@
 
     & li {
       margin-bottom: 1.85rem;
-      margin-left: 0rem;
+      margin-right: 0rem;
       margin-left: 0rem;
     }
   }
@@ -160,6 +160,10 @@
         .nav_items {
           display: flex;
           flex-direction: column;
+
+          &_socials {
+            padding: 0;
+          }
 
           li {
             font-size: 1.75rem;
