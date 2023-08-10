@@ -125,7 +125,7 @@
   }
 }
 
-@media only screen and (min-device-width: 801px) and (max-device-width:1024px) {
+@media only screen and (min-width: 801px) and (max-width:1024px) {
   .section {
     margin: 0 auto;
     box-sizing: border-box;
