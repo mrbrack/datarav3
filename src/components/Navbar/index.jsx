@@ -3,11 +3,23 @@ import styles from "./index.module.scss";
 import cl from "classnames";
 import Link from "next/link";
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineTwitter, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineTwitter, AiOutlineGithub} from "react-icons/ai";
+import { FaStarOfLife} from "react-icons/fa6";
 import { useRouter } from "next/router";
 
 // All social profiles
 const socialNetwork = [
+  {
+    id: 4,
+    href: "https://editor.p5js.org/datarav3/sketches",
+    icon: FaStarOfLife,
+    text: "p5.js"
+  },
+  {
+    id: 3,
+    href: "https://github.com/mrbrack",
+    icon: AiOutlineGithub,
+  },
   {
     id: 1,
     href: "https://www.instagram.com/datarav3",
@@ -17,13 +29,10 @@ const socialNetwork = [
     id: 2,
     href: "https://twitter.com/datarav3",
     icon: AiOutlineTwitter,
-  },
-  {
-    id: 3,
-    href: "https://github.com/mrbrack",
-    icon: AiOutlineGithub,
   }
 ];
+
+FaStarOfLife
 
 const Navbar = (className) => {
   const router = useRouter();
@@ -96,19 +105,23 @@ const Navbar = (className) => {
               </Link>
             </li>
             {socialNetwork.map((socialNetwork) => (
-          <li key={socialNetwork.id} className={styles.social_item}>
+            <li key={socialNetwork.id} className={styles.social_item}>
             <Link
               href={socialNetwork.href}
               target="_blank"
-              className={styles.listLink}
+              className={styles.socialNetworkListLink}
             >
               {React.createElement(socialNetwork.icon, {
                 color: "black",
                 size: 25,
-              })}
+              })
+              }
+              <p style={{
+              marginLeft: ".25rem"
+            }}>{socialNetwork.text && `${socialNetwork.text}`}</p>
             </Link>
-          </li>
-        ))}
+            </li>
+              ))}
           </ul>
         </div>
       </nav>
