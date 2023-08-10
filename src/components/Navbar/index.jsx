@@ -113,7 +113,7 @@ const Navbar = (className) => {
             >
               {React.createElement(socialNetwork.icon, {
                 color: "black",
-                size: 25,
+                size: 22.5,
               })
               }
               <p style={{
