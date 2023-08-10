@@ -48,7 +48,7 @@ const Work = ({ initialPosts, total }) => {
               justifyContent: "center",
             }}
           >
-            <Button disabled={loading} onClick={getMorePosts}>
+            <Button disabled={loading} onClick={getMorePosts} type="standard">
               load more posts...
             </Button>
           </div>

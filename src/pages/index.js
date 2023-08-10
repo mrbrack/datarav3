@@ -76,7 +76,7 @@ export default function Home({ initialPosts, total, initialBlogPosts, blogTotal 
               justifyContent: "center",
             }}
           >
-            <Button disabled={loading} onClick={getMorePosts}>
+            <Button disabled={loading} onClick={getMorePosts} type="standard">
               load more posts...
             </Button>
           </div>
