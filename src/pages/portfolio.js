@@ -2,6 +2,7 @@ import { Section, PostGrid, Post, Button } from "@/components";
 import { useState } from "react";
 import { loadData } from "./api/post";
 import {NextSeo} from 'next-seo';
+import Link from "next/link";
 
 const LOAD_MORE_STEP = 4; // controls how many initial posts are shown
 

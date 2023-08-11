@@ -50,6 +50,7 @@ const Contact = () => {
             alt="Nigel Fryatt working in the EMERGE creative studio at Sion Hill, Bath."
             width="1080"
             height="1080"
+            priority
           />
           <p className="extra">Image © Bath Spa University (Niklas Aarre)</p>
         </div>
