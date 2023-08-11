@@ -55,7 +55,7 @@ const Work = ({ initialPosts, total }) => {
 
 <h3>Cookies and Web Beacons</h3>
 
-<p>Like any other website, datarav3 uses "cookies". These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.</p>
+<p>Like any other website, datarav3 uses &ldquo;cookies&ldquo;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.</p>
 
 
 
