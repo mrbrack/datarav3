@@ -32,8 +32,6 @@ const socialNetwork = [
   }
 ];
 
-FaStarOfLife
-
 const Navbar = (className) => {
   const router = useRouter();
   const currentRoute = router.pathname;
@@ -90,6 +88,18 @@ const Navbar = (className) => {
                 }
               >
                 portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blog"
+                className={
+                  currentRoute === "/blog"
+                    ? styles.nav_bar_lvp_active
+                    : styles.nav_bar_lvp_not_active
+                }
+              >
+                blog
               </Link>
             </li>
             <li>
@@ -160,6 +170,16 @@ const Navbar = (className) => {
               }}
             >
               portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              onClick={() => {
+                setNavbar(!navbar);
+              }}
+            >
+              blog
             </Link>
           </li>
           <li>

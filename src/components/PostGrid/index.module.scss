@@ -1,22 +1,49 @@
 .postGrid {
+  &Post {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 6rem;
     row-gap: 3rem;
   }
 
+  &Blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 6rem;
+    row-gap: 3rem;
+    min-height: 60vh;
+  }
+  }
+
   @media only screen and (min-width: 801px) and (max-width:1024px) {
     .postGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 3rem;
-    row-gap: 3rem;
+      &Post {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+      }
+
+      &Blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6rem;
+        row-gap: 3rem;
+      }
     }
   }
   
   @media only screen and (max-width: 800px) {
     .postGrid {
-      grid-template-columns: 1fr;
-      gap: 1rem;
+      &Post {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      &Blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1.5rem;
+      }
     }
   }

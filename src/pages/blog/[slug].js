@@ -1,45 +1,56 @@
 import React from "react";
-import Head from "next/head";
-import Link from "next/link";
-import { Article, Content, Section } from "@/components";
-import Image from "next/image";
+import { BlogHeader, BlogContent } from "@/components";
 import { client } from "@/lib/client";
 import { format } from "date-fns";
 import { urlFor } from "@/lib/client";
 import styles from "./styles.module.scss";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { useRouter } from "next/router";
-import YouTube from 'react-youtube';
+import cl from "classnames";
 import {NextSeo} from 'next-seo';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  RedditShareButton,
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TelegramShareButton,
+  TelegramIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  EmailShareButton,
+  EmailIcon,
+} from 'next-share';
 
-const Post = ({ post }) => {
-  const router = useRouter();
-  const date = format(new Date(post.published_date), "dd MMM yyy");
+const Blog = ({ blog }) => {
   return (
     <>
       <NextSeo
-        title = {`${post.meta_title} | datarav3:`}
-        description = {post.description}
-        canonical= {`https://www.datarav3.art/post/${post.slug.current}`}
+        title = {`${blog.meta_title} | datarav3`}
+        description = {blog.description}
+        canonical= {`https://www.datarav3.art/blog/${blog.slug.current}`}
         openGraph={{
           type: 'article',
           article: {
-              publishedTime: post._createdAt,
-              modifiedTime: post._updatedAt,
+              publishedTime: blog._createdAt,
+              modifiedTime: blog._updatedAt,
               authors: [
                   'https://www.datarav3.art',
               ],
           },
-          url: `https://www.datarav3.art/${post.slug.current}`,
+          url: `https://www.datarav3.art/${blog.slug.current}`,
           images: [
               {
-                url: post.image 
-                  ? `${urlFor(post.image).url()}`
+                url: blog.featured_image 
+                  ? `${urlFor(blog.featured_image).url()}`
                   : '/assets/og/og_temp.jpg',
-                width: post.image 
+                width: blog.image 
                   ? 1000
                   : 1200,
-                height: post.image 
+                height: blog.image 
                   ? 1000
                   : 1200,
                   alt: "featured image",
@@ -48,62 +59,101 @@ const Post = ({ post }) => {
           site_name: 'datarav3'
       }}
       />
-      <section className={styles.back}>
-        <button
-          type="button"
-          onClick={() => router.back()}
-          className={styles.backButton}
-        >
-          <AiOutlineArrowLeft />
-          <h4 className={styles.backText}>back</h4>
-        </button>
-        <div className={styles.backTitle}>
-          <div className={styles.backTitleHeading}>
-            <div>
-              <h1 className={styles.backTitle}>{post.title}</h1>
-              <p className={styles.backTitleDate}>published: {date}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Section type="portfolio">
-        {
-          post.image 
-          ? <Image
-            src={urlFor(post.image).url()}
-            alt={post.image.caption}
-            width="1080"
-            height="1080"
-            className={styles.postImageWidth}
-            />
-          : <YouTube videoId={post.video_url} className="yt-embed" opts={{
-            playerVars: {
-              autoplay: 1,
-            },
-          }}/>
-        } 
-        <Content body={post.body} />
-        {
-          // Used to hide/display additional post content if present. Uses .postEmptyBlock class to display: none, currently
-          post.additional_body ? <Content body={post.additional_body} />
-          : <div className={styles.postEmptyBlock} />
-        }
-      </Section>
+      <BlogHeader {...blog} />
+      <nav className={styles.socialShare}>
+      <p>share: </p>
+      <EmailShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`}
+        subject={'Check this out'}
+        body="body"
+      >
+  <EmailIcon size={32} round />
+</EmailShareButton>
+      <FacebookShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <FacebookIcon size={32} round />
+      </FacebookShareButton>
+      <TwitterShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`}>
+      <TwitterIcon size={32} round />
+      </TwitterShareButton>
+      <LinkedinShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <LinkedinIcon size={32} round />
+      </LinkedinShareButton>
+      <PinterestShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <PinterestIcon size={32} round />
+      </PinterestShareButton>
+      <RedditShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <RedditIcon size={32} round />
+      </RedditShareButton>
+      <WhatsappShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <WhatsappIcon size={32} round />
+      </WhatsappShareButton>
+      <TelegramShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`}
+      >
+      <TelegramIcon size={32} round />
+      </TelegramShareButton>
+    </nav>
+      <BlogContent body={blog.body} className={styles.content}/>
+      <nav className={styles.socialShare}>
+      <p>share: </p>
+      <EmailShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`}
+        subject={'Check this out'}
+        body="body"
+      >
+  <EmailIcon size={32} round />
+</EmailShareButton>
+      <FacebookShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <FacebookIcon size={32} round />
+      </FacebookShareButton>
+      <TwitterShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`}>
+      <TwitterIcon size={32} round />
+      </TwitterShareButton>
+      <LinkedinShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <LinkedinIcon size={32} round />
+      </LinkedinShareButton>
+      <PinterestShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <PinterestIcon size={32} round />
+      </PinterestShareButton>
+      <RedditShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <RedditIcon size={32} round />
+      </RedditShareButton>
+      <WhatsappShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`} >
+        <WhatsappIcon size={32} round />
+      </WhatsappShareButton>
+      <TelegramShareButton
+        url={`https://www.datarav3.art/${blog.slug.current}`}
+      >
+      <TelegramIcon size={32} round />
+      </TelegramShareButton>
+    </nav>
     </>
   );
 };
 
 export async function getStaticPaths() {
-  const query = `*[_type == "post"] {
+  const query = `*[_type == "blog"] {
         slug {
             current
         }
     }`;
 
-  const posts = await client.fetch(query);
-  const paths = posts.map((post) => ({
+  const blog = await client.fetch(query);
+  const paths = blog.map((b) => ({
     params: {
-      slug: post.slug.current,
+      slug: b.slug.current,
     },
   }));
 
@@ -114,14 +164,14 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const query = `*[_type == "post" && slug.current == '${slug}'][0]`;
+  const query = `*[_type == "blog" && slug.current == '${slug}'][0]`;
 
-  const post = await client.fetch(query);
+  const blog = await client.fetch(query);
   return {
     props: {
-      post,
+      blog,
     },
   };
 }
 
-export default Post;
+export default Blog;

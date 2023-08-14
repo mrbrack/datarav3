@@ -1,0 +1,50 @@
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem 0;
+
+  &Content {
+    max-width: 800px;
+  }
+
+  // consistent margin throughout page
+  & h3 {
+    margin-top: 3rem;
+    margin-bottom:1.5rem;
+  }
+
+  // consistent margin throughout page
+  & figure {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  // Swaps spacing to margin so that everything neatly collapses
+  & ul {
+    padding: 0;
+    margin: 1.5rem 3rem;
+
+    & li {
+      line-height: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contentWrapper {
+    padding-bottom: 0;
+    margin: 1.5rem;
+
+    &Content {
+      padding: 0;
+
+      & ul {
+        padding: 0;
+        margin: 1.5rem 1rem;
+      }
+    }
+  }
+}

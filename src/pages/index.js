@@ -4,6 +4,7 @@ import {
   Section,
   PostGrid,
   Post,
+  Blog,
   Button,
 } from "@/components";
 import { useState } from "react";
@@ -64,7 +65,7 @@ export default function Home({ initialPosts, total, initialBlogPosts, blogTotal 
         creative tech & generative art
       </Section>
       <Section type="standard" title="lastest work" titleType="h2Top">
-        <PostGrid>
+        <PostGrid type="post">
           {posts.map((post) => (
             <Post key={post._id} {...post} />
           ))}
@@ -82,26 +83,6 @@ export default function Home({ initialPosts, total, initialBlogPosts, blogTotal 
           </div>
         )}
       </Section>
-      {/*<}Section type="standard" title="blog" titleType="h2Top">
-        <PostGrid>
-          {blogPosts.map((blogPost) => (
-            <Post key={blogPost._id} {...blogPost} />
-          ))}
-        </PostGrid>
-        {showBlogLoadButton && (
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "1.5rem"
-            }}
-          >
-            <Button disabled={loading} onClick={getMoreBlogPosts}>
-              load more posts...
-            </Button>
-          </div>
-        )}
-          </Section>*/}
     </div>
   );
 }

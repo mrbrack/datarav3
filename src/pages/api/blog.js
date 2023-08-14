@@ -17,7 +17,7 @@ export default async function post(req, res) {
 
 export async function loadBlogData(start, end) {
   const query = `{
-    "blogPosts": *[_type == "blog"] | order(published_date desc) [${start}...${end}] {_id, published_date, title, slug, description, image, thumbnail, video_url},
+    "blogPosts": *[_type == "blog"] | order(published_date desc) [${start}...${end}] {_id, published_date, title, slug, description, featured_image, header_image, video_url},
     "blogTotal": count(*[_type == "blog"])
   }`;
 

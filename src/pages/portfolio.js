@@ -37,7 +37,7 @@ const Work = ({ initialPosts, total }) => {
         portfolio
       </Section>
       <Section type="standard">
-        <PostGrid>
+        <PostGrid type="post">
           {posts.map((post) => (
             <Post key={post._id} {...post} />
           ))}

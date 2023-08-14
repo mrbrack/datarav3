@@ -8,9 +8,9 @@ const Work = ({ initialPosts, total }) => {
   return (
     <>
       <NextSeo
-            title="terms and conditions | datarav3: creative technology and generative art"
-            description="Explore my portfolio of work spanning generative art, creative technology, audio and workshops"
-            canonical="https://www.datarav3.art/terms"
+            title="privacy policy | datarav3: creative technology and generative art"
+            description="At datarav3, accessible from www.datarav3.art, one of our main priorities is the privacy of our visitors."
+            canonical="https://www.datarav3.art/privacy-policy"
       />
       <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
         privacy policy

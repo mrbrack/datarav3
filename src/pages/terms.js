@@ -9,7 +9,7 @@ const Work = ({ initialPosts, total }) => {
     <>
       <NextSeo
             title="terms and conditions | datarav3: creative technology and generative art"
-            description="These Legal Terms constitute a legally binding agreement made between you and datarav3 concerning your access to and use of the Services."
+            description="These legal terms concern your access to and use of the services on datarav3.art."
             canonical="https://www.datarav3.art/terms"
       />
       <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">

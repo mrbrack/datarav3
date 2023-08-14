@@ -16,13 +16,19 @@ export default {
         validation: (Rule) => Rule.required(),
       },
       {
+        name: 'excerpt',
+        type: 'string',
+        title: 'Excerpt',
+        validation: (Rule) => Rule.required(),
+      },
+      {
         name: 'published_date',
         type: 'date',
         title: 'Published Date',
         validation: (Rule) => Rule.required(),
       },
       {
-        name: 'thumbnail',
+        name: 'featured_image',
         type: 'image',
         title: 'Thumbnail',
         validation: (Rule) => Rule.required(),
@@ -44,7 +50,7 @@ export default {
         ],
       },
       {
-        name: 'image',
+        name: 'header_image',
         type: 'image',
         title: 'Image',
         options: {
@@ -63,21 +69,6 @@ export default {
             title: 'Attribution',
           },
         ],
-      },
-      {
-        name: 'video_url',
-        type: 'string',
-        title: 'videoUrl',
-      },
-      {
-        name: 'videoWidth',
-        type: 'string',
-        title: 'videoWidth',
-      },
-      {
-        name: 'videoHeight',
-        type: 'string',
-        title: 'videoHeight',
       },
       {
         name: 'description',
@@ -104,26 +95,50 @@ export default {
         of: [
           {
             type: 'block',
+            title: 'Block',
+            marks: {
+              annotations: [
+                {
+                  name: 'link',
+                  type: 'object',
+                  title: 'External link',
+                  fields: [
+                    {
+                      name: 'href',
+                      type: 'url',
+                      title: 'URL'
+                    },
+                    {
+                      title: 'Open in new tab',
+                      name: 'blank',
+                      type: 'boolean'
+                    }
+                  ]
+                },
+                {
+                  name: 'internalLink',
+                  type: 'object',
+                  title: 'Internal link',
+                  fields: [
+                    {
+                      name: 'reference',
+                      type: 'reference',
+                      title: 'Reference',
+                      to: [
+                        { type: 'post' },
+                        // other types you may want to link to
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             type: 'image',
           },
         ],
-      },
-      {
-        title: 'Additional Content',
-        name: 'additional_body',
-        type: 'array',
-        validation: false,
-        of: [
-          {
-            type: 'block',
-          },
-          {
-            type: 'image',
-          },
-        ],
-      },
+      }
     ],
   }
   
