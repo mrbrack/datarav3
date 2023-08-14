@@ -35,7 +35,6 @@ const socialNetwork = [
 const BlogHeader = ({title, header_image, excerpt, published_date}) => {
 
   const date = format(new Date(published_date), "dd/MM/yy");
-
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
