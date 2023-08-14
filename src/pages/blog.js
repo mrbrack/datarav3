@@ -28,7 +28,7 @@ const Blog = ({ initialBlogPosts, blogTotal }) => {
       <NextSeo
             title="portfolio | datarav3: creative technology and generative art"
             description="Explore my portfolio of work spanning generative art, creative technology, audio and workshops"
-            canonical="https://www.datarav3.art/portfolio"
+            canonical="https://www.datarav3.art/blog"
       />
       <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
         blog
