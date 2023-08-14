@@ -20,6 +20,7 @@
 
       & h1 {
         color:#fff;
+        padding-bottom: 0rem;
       }
 
       & p {
@@ -27,7 +28,8 @@
       }
 
       &Meta {
-        margin: 1.5rem 0;
+        margin-top: 0.75rem;
+        margin-bottom: 1.5rem;
         display: flex;
         gap: 0.5rem;
         align-items: center;
