@@ -6,6 +6,10 @@
 
   &Content {
     max-width: 800px;
+
+    & audio {
+      width: 100%;
+    }
   }
 
   // consistent margin throughout page

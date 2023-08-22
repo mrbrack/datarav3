@@ -1,3 +1,5 @@
+import { defineType, defineArrayMember } from "sanity";
+
 export default {
     name: 'blog',
     type: 'document',
@@ -96,6 +98,16 @@ export default {
           {
             type: 'block',
             title: 'Block',
+            of: [
+              {
+                name: 'inlineAudio',
+                type: 'file',
+                title: 'Inline audio player',
+                options: {
+                  accept: 'audio/*',
+                },
+              },
+            ],
             marks: {
               annotations: [
                 {

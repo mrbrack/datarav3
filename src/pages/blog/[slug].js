@@ -167,6 +167,8 @@ export async function getStaticProps({ params: { slug } }) {
   const query = `*[_type == "blog" && slug.current == '${slug}'][0]`;
 
   const blog = await client.fetch(query);
+
+  console.log(blog);
   return {
     props: {
       blog,
