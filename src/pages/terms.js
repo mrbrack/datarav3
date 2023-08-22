@@ -11,6 +11,7 @@ const Work = ({ initialPosts, total }) => {
         title="terms and conditions | datarav3: creative technology and generative art"
         description="These legal terms concern your access to and use of the services on datarav3.art."
         canonical="https://www.datarav3.art/terms"
+        noindex={true}
       />
       <Section
         type="header-page"

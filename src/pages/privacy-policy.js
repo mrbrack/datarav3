@@ -11,6 +11,7 @@ const Work = ({ initialPosts, total }) => {
         title="privacy policy | datarav3: creative technology and generative art"
         description="At datarav3, accessible from www.datarav3.art, one of our main priorities is the privacy of our visitors."
         canonical="https://www.datarav3.art/privacy-policy"
+        noindex={true}
       />
       <Section
         type="header-page"
