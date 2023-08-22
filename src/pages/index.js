@@ -1,19 +1,17 @@
 import { loadData } from "./api/post";
 import { loadBlogData } from "./api/blog";
-import {
-  Section,
-  PostGrid,
-  Post,
-  Blog,
-  Button,
-} from "@/components";
+import { Section, PostGrid, Post, Blog, Button } from "@/components";
 import { useState } from "react";
 
-const LOAD_MORE_STEP = 4; // controls how many initial art posts are shown
+const LOAD_MORE_STEP = 8; // controls how many initial art posts are shown
 const LOAD_MORE_BLOG_STEP = 4; // controls how many initial blog posts are shown
 
-export default function Home({ initialPosts, total, initialBlogPosts, blogTotal }) {
-
+export default function Home({
+  initialPosts,
+  total,
+  initialBlogPosts,
+  blogTotal,
+}) {
   /* Art posts */
 
   const [posts, setPosts] = useState(initialPosts);
@@ -22,7 +20,8 @@ export default function Home({ initialPosts, total, initialBlogPosts, blogTotal 
 
   const showLoadButton = total > loadedAmount; // will show a load more button if total number of posts is more than initial amount
 
-  const getMorePosts = async () => { // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
+  const getMorePosts = async () => {
+    // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
     setLoading(true);
 
     try {
@@ -45,11 +44,14 @@ export default function Home({ initialPosts, total, initialBlogPosts, blogTotal 
 
   const showBlogLoadButton = blogTotal > loadedBlogAmount; // will show a load more button if total number of posts is more than initial amount
 
-  const getMoreBlogPosts = async () => { // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
+  const getMoreBlogPosts = async () => {
+    // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
     setBlogLoading(true);
     try {
       const blogData = await fetch(
-        `api/blog?start=${loadedBlogAmount}&end=${loadedBlogAmount + LOAD_MORE_BLOG_STEP}`
+        `api/blog?start=${loadedBlogAmount}&end=${
+          loadedBlogAmount + LOAD_MORE_BLOG_STEP
+        }`
       ).then((response) => response.json());
       setLoadedBlogAmount(loadedBlogAmount + LOAD_MORE_BLOG_STEP);
       setPosts([...blogPosts, ...blogData.blogPosts]);
@@ -61,7 +63,11 @@ export default function Home({ initialPosts, total, initialBlogPosts, blogTotal 
 
   return (
     <div>
-      <Section type="headerAnimated" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
+      <Section
+        type="headerAnimated"
+        img="/home_back.png"
+        alt="hundres of purple, green and blue dots styled in the shape of a wave"
+      >
         creative tech & generative art
       </Section>
       <Section type="standard" title="lastest work" titleType="h2Top">

@@ -14,7 +14,7 @@ const Post = ({
   published_date,
 }) => {
   const date = format(new Date(published_date), "dd/MM/yy");
-  
+
   if (description.length > 300) {
     description = description.slice(0, 67).concat("...");
   }
@@ -36,7 +36,6 @@ const Post = ({
         </div>
         <div className={styles.postContentDetails}>
           <h4 className={styles.postContentDetailsTitle}>{title}</h4>
-         
         </div>
       </div>
     </Link>

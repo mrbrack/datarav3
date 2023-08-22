@@ -13,7 +13,7 @@
     }
 
     &Details {
-      padding-top: 1.25rem;
+      padding-top: 0.75rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -24,6 +24,7 @@
         margin-bottom: 0rem;
         font-weight: 400;
         color: #252525;
+        text-align: center;
       }
 
       &Description {
@@ -35,49 +36,48 @@
         position: absolute;
         right: 10px;
         top: 1rem;
-        font-size: .9rem;
+        font-size: 0.9rem;
         margin-bottom: 0.5rem;
         color: #374049;
       }
-
     }
   }
 }
 
 @media only screen and (max-width: 800px) {
   .post {
-  &Content {
-    display: grid;
-    grid-template-columns: .33fr 1fr;
-    gap: 0.25rem;
-
-    &Details {
+    &Content {
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      padding: 1rem .5rem 1rem 1rem;
-      align-items: center;
+      grid-template-columns: 0.33fr 1fr;
+      gap: 0.25rem;
 
-      &Date {
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        text-align: right;
+      &Details {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 1rem 0.5rem 1rem 1rem;
+        align-items: center;
+
+        &Date {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          text-align: right;
+        }
+
+        &Title {
+          grid-column-start: 1;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          text-align: left;
+        }
+
+        &Description {
+          display: none;
+        }
       }
-
-      &Title {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-      }
-
-      &Description {
-        display: none;
-      }
-
     }
   }
-}
 }

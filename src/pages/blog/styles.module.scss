@@ -1,26 +1,25 @@
 .content {
-
-    & p {
+  & p {
     line-height: 1.75rem;
-    }
+  }
 }
 
 .socialShare {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
 }
 
-@media only screen and (max-width:800px) {
-    .socialShare {
-        justify-content: start;
-        margin: 1.5rem;
+@media only screen and (max-width: 800px) {
+  .socialShare {
+    justify-content: start;
+    margin: 1.5rem;
 
-        & svg {
-            width: 20px;
-            height: 20px;
-        }
+    & svg {
+      width: 20px;
+      height: 20px;
     }
+  }
 }

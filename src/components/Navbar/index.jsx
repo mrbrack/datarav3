@@ -3,8 +3,14 @@ import styles from "./index.module.scss";
 import cl from "classnames";
 import Link from "next/link";
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineTwitter, AiOutlineGithub} from "react-icons/ai";
-import { FaStarOfLife} from "react-icons/fa6";
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+  AiOutlineGithub,
+} from "react-icons/ai";
+import { FaStarOfLife } from "react-icons/fa6";
 import { useRouter } from "next/router";
 
 // All social profiles
@@ -13,7 +19,7 @@ const socialNetwork = [
     id: 1,
     href: "https://editor.p5js.org/datarav3/sketches",
     icon: FaStarOfLife,
-    text: "p5.js"
+    text: "p5.js",
   },
   {
     id: 2,
@@ -29,7 +35,7 @@ const socialNetwork = [
     id: 4,
     href: "https://twitter.com/datarav3",
     icon: AiOutlineTwitter,
-  }
+  },
 ];
 
 const Navbar = (className) => {
@@ -39,9 +45,9 @@ const Navbar = (className) => {
   return (
     <header className={cl(className, styles.header)}>
       <nav className={cl(className, styles.nav)}>
-          <Link href="/" className={cl(className, styles.logo)}>
-            datarav3
-          </Link>
+        <Link href="/" className={cl(className, styles.logo)}>
+          datarav3
+        </Link>
         <div className={cl(className, styles.nav_bar_svp)}>
           <button
             onClick={() => {
@@ -115,22 +121,25 @@ const Navbar = (className) => {
               </Link>
             </li>
             {socialNetwork.map((socialNetwork) => (
-            <li key={socialNetwork.id} style={{marginLeft: "0", marginRight: ".425rem"}}>
-            <Link
-              href={socialNetwork.href}
-              target="_blank"
-            >
-              {React.createElement(socialNetwork.icon, {
-                color: "black",
-                size: 22.5,
-              })
-              }
-              <p style={{
-              marginLeft: ".25rem"
-            }}>{socialNetwork.text && `${socialNetwork.text}`}</p>
-            </Link>
-            </li>
-              ))}
+              <li
+                key={socialNetwork.id}
+                style={{ marginLeft: "0", marginRight: ".425rem" }}
+              >
+                <Link href={socialNetwork.href} target="_blank">
+                  {React.createElement(socialNetwork.icon, {
+                    color: "black",
+                    size: 22.5,
+                  })}
+                  <p
+                    style={{
+                      marginLeft: ".25rem",
+                    }}
+                  >
+                    {socialNetwork.text && `${socialNetwork.text}`}
+                  </p>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>
@@ -194,20 +203,20 @@ const Navbar = (className) => {
           </li>
         </ul>
         <ul className={cl(className, styles.nav_items_socials)}>
-        {socialNetwork.map((socialNetwork) => (
-          <li key={socialNetwork.id} className={styles.social_item}>
-            <Link
-              href={socialNetwork.href}
-              target="_blank"
-              className={styles.listLink}
-            >
-              {React.createElement(socialNetwork.icon, {
-                color: "black",
-                size: 25,
-              })}
-            </Link>
-          </li>
-        ))}
+          {socialNetwork.map((socialNetwork) => (
+            <li key={socialNetwork.id} className={styles.social_item}>
+              <Link
+                href={socialNetwork.href}
+                target="_blank"
+                className={styles.listLink}
+              >
+                {React.createElement(socialNetwork.icon, {
+                  color: "black",
+                  size: 25,
+                })}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

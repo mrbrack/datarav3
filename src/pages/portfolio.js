@@ -1,10 +1,10 @@
 import { Section, PostGrid, Post, Button } from "@/components";
 import { useState } from "react";
 import { loadData } from "./api/post";
-import {NextSeo} from 'next-seo';
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 
-const LOAD_MORE_STEP = 4; // controls how many initial posts are shown
+const LOAD_MORE_STEP = 8; // controls how many initial posts are shown
 
 const Work = ({ initialPosts, total }) => {
   const [posts, setPosts] = useState(initialPosts);
@@ -13,7 +13,8 @@ const Work = ({ initialPosts, total }) => {
 
   const showLoadButton = total > loadedAmount; // will show a load more button if total number of posts is more than initial amount
 
-  const getMorePosts = async () => { // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
+  const getMorePosts = async () => {
+    // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
     setLoading(true);
     try {
       const data = await fetch(
@@ -29,11 +30,15 @@ const Work = ({ initialPosts, total }) => {
   return (
     <>
       <NextSeo
-            title="portfolio | datarav3: creative technology and generative art"
-            description="Explore my portfolio of work spanning generative art, creative technology, audio and workshops"
-            canonical="https://www.datarav3.art/portfolio"
+        title="portfolio | datarav3: creative technology and generative art"
+        description="Explore my portfolio of work spanning generative art, creative technology, audio and workshops"
+        canonical="https://www.datarav3.art/portfolio"
       />
-      <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
+      <Section
+        type="header-page"
+        img="/home_back.png"
+        alt="hundres of purple, green and blue dots styled in the shape of a wave"
+      >
         portfolio
       </Section>
       <Section type="standard">

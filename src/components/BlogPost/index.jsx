@@ -15,7 +15,7 @@ const BlogPost = ({
   published_date,
 }) => {
   const date = format(new Date(published_date), "dd/MM/yy");
-  
+
   if (description.length > 300) {
     description = description.slice(0, 67).concat("...");
   }

@@ -1,6 +1,6 @@
 /**
  * Endpoint for sending contact messages to sendgrid.
-*/
+ */
 
 import { NextApiRequest, NextApiResponse } from "next";
 import sendgrid from "@sendgrid/mail";
@@ -12,8 +12,8 @@ export default async function handler(req, res) {
 
   try {
     await sendgrid.send({
-      to: "nigel@enfiniti.xyz", 
-      from: "nigel@datarav3.art", 
+      to: "nigel@enfiniti.xyz",
+      from: "nigel@datarav3.art",
       subject: "New website message!",
       html: `<div>You've got mail</div> <div>${name}</div> <div>${email}</div> <div>${message}</div>`,
     });

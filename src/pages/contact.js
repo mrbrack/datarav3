@@ -1,7 +1,7 @@
 import { Section, Button } from "@/components";
 import Image from "next/image";
 import { useState } from "react";
-import {NextSeo} from 'next-seo';
+import { NextSeo } from "next-seo";
 
 const Contact = () => {
   const [isSubmitted, setSubmitted] = useState(false);
@@ -35,12 +35,16 @@ const Contact = () => {
 
   return (
     <>
-       <NextSeo
-            title="contact | datarav3: creative technology and generative art"
-            description="I'm always keen to hear from like-minded people. Drop me a message to schedule a coffee/call."
-            canonical="https://www.datarav3.art/contact"
+      <NextSeo
+        title="contact | datarav3: creative technology and generative art"
+        description="I'm always keen to hear from like-minded people. Drop me a message to schedule a coffee/call."
+        canonical="https://www.datarav3.art/contact"
       />
-      <Section type="header-page" img="/home_back.png" alt="hundres of purple, green and blue dots styled in the shape of a wave">
+      <Section
+        type="header-page"
+        img="/home_back.png"
+        alt="hundres of purple, green and blue dots styled in the shape of a wave"
+      >
         contact
       </Section>
       <Section type="two-column-top">
