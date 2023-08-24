@@ -6,4 +6,4 @@ Allow: /
 
 Host: https://www.datarav3.art
 
-Sitemap: https://www.datarav3.art/sitemap-0.xml
+Sitemap: https://www.datarav3.art/sitemap.xml
