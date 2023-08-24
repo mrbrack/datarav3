@@ -4,6 +4,9 @@ Disallow: /
 User-agent: *
 Allow: /
 
+Disallow: /terms
+Disallow: /privacy-policy
+
 Host: https://www.datarav3.art
 
 Sitemap: https://www.datarav3.art/sitemap.xml
