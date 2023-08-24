@@ -1,0 +1,9 @@
+User-agent: GPTBot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Host: https://www.datarav3.art
+
+Sitemap: https://www.datarav3.art/sitemap-0.xml
