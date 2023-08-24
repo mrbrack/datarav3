@@ -21,6 +21,7 @@
     & pre {
       max-height: 450px;
       max-width: 100%;
+      overflow: auto;
       overflow-y: scroll;
       overflow-x: auto;
       margin: 3rem 0;
@@ -63,6 +64,7 @@
 
     &Content {
       padding: 0;
+      max-width: 100%;
 
       & ul {
         padding: 0;
@@ -70,16 +72,23 @@
       }
 
       & pre {
+        display: block;
         max-height: 450px;
-        max-width: 100%;
-        overflow-y: scroll;
-        overflow-x: scroll;
         margin: 3rem 0;
         padding: 1.5rem;
+        overflow-y: scroll;
+        overflow-x: scroll;
         font-family: Consolas, monospace;
         background: rgb(250, 250, 250);
         border: 1px solid rgb(230, 230, 230);
-        white-space: normal;
+        white-space: pre-line;
+        box-sizing: border-box;
+
+        & span {
+          display: block;
+          margin: 0;
+          padding: 0;
+        }
       }
     }
   }

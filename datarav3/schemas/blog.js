@@ -107,26 +107,26 @@ export default {
                 accept: 'audio/*',
               },
             },
+            {
+              name: 'code',
+              type: 'object',
+              title: 'Code',
+              fields: [
+                {
+                  name: 'language',
+                  title: 'Language',
+                  type: 'string',
+                },
+                {
+                  name: 'code',
+                  title: 'Code',
+                  type: 'text',
+                },
+              ],
+            },
           ],
           marks: {
             annotations: [
-              {
-                name: 'code',
-                title: 'Code',
-                type: 'object',
-                fields: [
-                  {
-                    name: 'language',
-                    title: 'Language',
-                    type: 'string',
-                  },
-                  {
-                    name: 'code',
-                    title: 'Code',
-                    type: 'text',
-                  },
-                ],
-              },
               {
                 name: 'link',
                 type: 'object',

@@ -3,6 +3,10 @@ import styles from "./index.module.scss";
 import PortableText from "@sanity/block-content-to-react";
 import { clientConfig } from "@/lib/client";
 
+const CustomContainer = ({ children }) => {
+  return <div>{children}</div>;
+};
+
 const serializers = {
   types: {
     inlineAudio: ({ node }) => {
@@ -19,21 +23,57 @@ const serializers = {
         </audio>
       );
     },
+    block: (props) => {
+      const { style = "normal" } = props.node;
+
+      if (style === "h1") {
+        return <h1>{props.children}</h1>;
+      }
+
+      if (style === "h2") {
+        return <h2>{props.children}</h2>;
+      }
+
+      if (style === "h3") {
+        return <h3>{props.children}</h3>;
+      }
+
+      if (style === "h4") {
+        return <h4>{props.children}</h4>;
+      }
+
+      if (style === "h5") {
+        return <h5>{props.children}</h5>;
+      }
+
+      if (style === "h6") {
+        return <h6>{props.children}</h6>;
+      }
+
+      if (style === "blockquote") {
+        return props.children;
+      }
+
+      return <p>{props.children}</p>;
+    },
+    code: (props) => {
+      const data = props.node.code;
+      return (
+        <pre>
+          <code>{data}</code>
+        </pre>
+      );
+    },
   },
   marks: {
     link: ({ children, mark }) =>
       mark.blank ? (
-        <a href={mark.href} target="blank" rel="noopener noreferer">
+        <a href={mark.href} target="_blank" rel="noopener noreferrer">
           {children}
         </a>
       ) : (
         <a href={mark.href}>{children}</a>
       ),
-    code: ({ children, mark }) => (
-      <pre>
-        <code>{mark.code}</code>
-      </pre>
-    ),
   },
 };
 
@@ -46,6 +86,7 @@ const Content = ({ body, className }) => {
         dataset={clientConfig.dataset}
         serializers={serializers}
         className={cl(className, styles.contentWrapperContent)}
+        renderContainerOnSingleChild={true}
       />
     </div>
   );
