@@ -17,22 +17,16 @@ import { useRouter } from "next/router";
 const socialNetwork = [
   {
     id: 1,
-    href: "https://editor.p5js.org/datarav3/sketches",
-    icon: FaStarOfLife,
-    text: "p5.js",
-  },
-  {
-    id: 2,
     href: "https://github.com/mrbrack",
     icon: AiOutlineGithub,
   },
   {
-    id: 3,
+    id: 2,
     href: "https://www.instagram.com/datarav3",
     icon: AiOutlineInstagram,
   },
   {
-    id: 4,
+    id: 3,
     href: "https://twitter.com/datarav3",
     icon: AiOutlineTwitter,
   },
