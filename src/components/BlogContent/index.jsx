@@ -29,6 +29,11 @@ const serializers = {
       ) : (
         <a href={mark.href}>{children}</a>
       ),
+    code: ({ children, mark }) => (
+      <pre>
+        <code>{mark.code}</code>
+      </pre>
+    ),
   },
 };
 
