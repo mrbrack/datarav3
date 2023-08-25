@@ -1,6 +1,7 @@
 import { Section } from "@/components";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -26,31 +27,25 @@ const About = () => {
         />
         <div className="inner-container">
           <p>
-            I use creative programming to explore the intersection between
-            technology and human expression.{" "}
+            Alongside being a freelance web developer, I use creative
+            programming to explore the intersection between creativity,
+            technology and human expression. I also facilitate workshops
+            covering the topics of ethical marketing, future technologies,
+            artificial intelligence ethics and website design.
           </p>
           <p>
-            Through my work, I question whether code can create experiences that
-            allow us to access feelings that are intimate and human. Broadly, my
-            work acts as a criticism of the fascination capitalism has with
-            technology.
-          </p>
-
-          <p>
-            I started my programming journey at the age of thirteen, inspired by
-            my father who was forever tinkering with computers and servers
-            throughout my childhood. Now, I split my time between making
-            websites as a freelance web developer, delivering workshops and
-            creating generative art. I am based in Bristol, UK and work out of
-            Bath Spa University&apos;s EMERGE creative studio where I am a
-            mentor in Creative Media.
+            My artworks find their roots in: the spectacle, environmental
+            concern, ethics, nostalgic technologies and electronic music.
           </p>
           <p>
-            “Algorithms have the potential to evoke powerful and intimate
-            emotions, we just don&apos;t talk about it enough. Or, perhaps, the
-            types of conversations programmers tend to have about algorithms
-            don&apos;t afford people to think in those ways. Yes, computer
-            science is important, but so is art.”
+            I am based in Bristol, UK and work out of Bath Spa University&apos;s
+            EMERGE creative studio where I am a mentor in Creative Media.
+          </p>
+          <p>
+            I'm really interested in developing collaborations with artists
+            working in other mediums.
+            {<Link href="/contact"> Get in touch </Link>}
+            if you've got an idea you'd like to explore!
           </p>
         </div>
       </Section>
