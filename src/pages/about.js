@@ -44,10 +44,10 @@ const About = () => {
             EMERGE creative studio where I am a mentor in Creative Media.
           </p>
           <p>
-            I'm really interested in developing collaborations with artists
+            I&apos;m really interested in developing collaborations with artists
             working in other mediums.
             {<Link href="/contact"> Get in touch </Link>}
-            if you've got an idea you'd like to explore!
+            if you&apos;ve got an idea you&apos;d like to explore!
           </p>
         </div>
       </Section>
