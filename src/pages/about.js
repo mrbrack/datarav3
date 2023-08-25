@@ -20,18 +20,20 @@ const About = () => {
       </Section>
       <Section type="two-column-top">
         <Image
-          src="/datarav3_about_me.jpg"
-          alt="Nigel Fryatt working in the EMERGE creative studio at Sion Hill, Bath."
+          src="/datarav3_about_me_alt.jpg"
+          alt="Nigel Fryatt dressed in a white checked shirt standing in front of blurred windows"
           width="1080"
           height="1080"
+          ObjectFit="contain"
+          priority
         />
         <div className="inner-container">
+          <p>Generative artist and freelance web developer. </p>
           <p>
-            Alongside being a freelance web developer, I use creative
-            programming to explore the intersection between creativity,
-            technology and human expression. I also facilitate workshops
-            covering the topics of ethical marketing, future technologies,
-            artificial intelligence ethics and website design.
+            I use creative programming to explore the intersection between
+            creativity, technology and human expression. I also facilitate
+            workshops covering the topics of ethical marketing, future
+            technologies, artificial intelligence ethics and website design.
           </p>
           <p>
             My artworks find their roots in: the spectacle, environmental

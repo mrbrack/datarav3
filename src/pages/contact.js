@@ -50,13 +50,12 @@ const Contact = () => {
       <Section type="two-column-top">
         <div>
           <Image
-            src="/datarav3_contact.jpg"
-            alt="Nigel Fryatt working in the EMERGE creative studio at Sion Hill, Bath."
+            src="/datarav3_contact_alt.jpg"
+            alt="Nigel Fryatt wearing a white checked shirt looking at a presentation on a television"
             width="1080"
             height="1080"
             priority
           />
-          <p className="extra">Image © Bath Spa University (Niklas Aarre)</p>
         </div>
         <div className="inner-container">
           {isSubmitted ? (
