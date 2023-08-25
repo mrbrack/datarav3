@@ -33,7 +33,8 @@ const About = () => {
             I use creative programming to explore the intersection between
             creativity, technology and human expression. I also facilitate
             workshops covering the topics of ethical marketing, future
-            technologies, artificial intelligence ethics and website design.
+            technologies, artificial intelligence ethics and website
+            development.
           </p>
           <p>
             My artworks find their roots in: the spectacle, environmental
