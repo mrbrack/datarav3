@@ -17,8 +17,8 @@ export default async function post(req, res) {
 
 export async function loadBlogData(start, end) {
   const query = `{
-    "blogPosts": *[_type == "blog"] | order(published_date desc) [${start}...${end}] {_id, published_date, title, slug, description, featured_image, header_image, video_url},
-    "blogTotal": count(*[_type == "blog"])
+    "blogPosts": *[_type == "blog" && !(_id in path('drafts.**'))] | order(published_date desc) [${start}...${end}] {_id, published_date, title, slug, description, featured_image, header_image, video_url},
+    "blogTotal": count(*[_type == "blog" && !(_id in path('drafts.**'))])
   }`;
 
   const { blogPosts, blogTotal } = await client.fetch(query);
