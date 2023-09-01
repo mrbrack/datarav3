@@ -44,6 +44,8 @@
       display: grid;
       grid-template-columns: 1fr;
       column-gap: 1.5rem;
+      grid-auto-rows: min-content;
+      grid-row-gap: 1.5rem;
     }
   }
 }
