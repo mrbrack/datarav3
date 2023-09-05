@@ -74,6 +74,8 @@ const Post = ({ post }) => {
             opts={{
               playerVars: {
                 autoplay: 1,
+                height: "1920",
+                width: "1080",
               },
             }}
           />
