@@ -4,14 +4,13 @@ import { Section, PostGrid, Post, Blog, Button } from "@/components";
 import { useState } from "react";
 
 const LOAD_MORE_STEP = 8; // controls how many initial art posts are shown
-const LOAD_MORE_BLOG_STEP = 4; // controls how many initial blog posts are shown
 
-export default function Home({
-  initialPosts,
-  total,
-  initialBlogPosts,
-  blogTotal,
-}) {
+export async function getInitialData() {
+  const { posts, total } = await loadData(0, LOAD_MORE_STEP);
+  return { posts, total };
+}
+
+export default function Home({ initialPosts, total }) {
   /* Art posts */
 
   const [posts, setPosts] = useState(initialPosts);
@@ -35,32 +34,6 @@ export default function Home({
       setLoading(false);
     }
   };
-
-  /* Blog posts */
-
-  const [blogPosts, setBlogPosts] = useState(initialBlogPosts);
-  const [loadedBlogAmount, setLoadedBlogAmount] = useState(LOAD_MORE_BLOG_STEP);
-  const [blogLoading, setBlogLoading] = useState(false);
-
-  const showBlogLoadButton = blogTotal > loadedBlogAmount; // will show a load more button if total number of posts is more than initial amount
-
-  const getMoreBlogPosts = async () => {
-    // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
-    setBlogLoading(true);
-    try {
-      const blogData = await fetch(
-        `api/blog?start=${loadedBlogAmount}&end=${
-          loadedBlogAmount + LOAD_MORE_BLOG_STEP
-        }`
-      ).then((response) => response.json());
-      setLoadedBlogAmount(loadedBlogAmount + LOAD_MORE_BLOG_STEP);
-      setPosts([...blogPosts, ...blogData.blogPosts]);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  };
-
   return (
     <div>
       <Section
@@ -93,15 +66,12 @@ export default function Home({
   );
 }
 
-export async function getServerSideProps() {
-  const { posts, total } = await loadData(0, LOAD_MORE_STEP);
-  const { blogPosts, blogTotal } = await loadBlogData(0, LOAD_MORE_STEP);
+export async function getStaticProps() {
+  const { posts, total } = await getInitialData();
   return {
     props: {
       initialPosts: posts,
-      total,
-      initialBlogPosts: blogPosts,
-      blogTotal,
+      total: total,
     },
   };
 }

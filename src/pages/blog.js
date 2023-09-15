@@ -6,6 +6,11 @@ import Link from "next/link";
 
 const LOAD_MORE_BLOG_STEP = 10; // controls how many initial posts are shown
 
+export async function getInitialData() {
+  const { blogPosts, blogTotal } = await loadBlogData(0, LOAD_MORE_BLOG_STEP);
+  return { blogPosts, blogTotal };
+}
+
 const Blog = ({ initialBlogPosts, blogTotal }) => {
   const [blogPosts, setBlogPosts] = useState(initialBlogPosts);
   const [loadedBlogAmount, setLoadedBlogAmount] = useState(LOAD_MORE_BLOG_STEP);
@@ -51,8 +56,8 @@ const Blog = ({ initialBlogPosts, blogTotal }) => {
   );
 };
 
-export async function getServerSideProps() {
-  const { blogPosts, blogTotal } = await loadBlogData(0, LOAD_MORE_BLOG_STEP);
+export async function getStaticProps() {
+  const { blogPosts, blogTotal } = await getInitialData();
   return {
     props: {
       initialBlogPosts: blogPosts,

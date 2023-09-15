@@ -6,6 +6,11 @@ import Link from "next/link";
 
 const LOAD_MORE_STEP = 8; // controls how many initial posts are shown
 
+export async function getInitialData() {
+  const { posts, total } = await loadData(0, LOAD_MORE_STEP);
+  return { posts, total };
+}
+
 const Work = ({ initialPosts, total }) => {
   const [posts, setPosts] = useState(initialPosts);
   const [loadedAmount, setLoadedAmount] = useState(LOAD_MORE_STEP);
@@ -64,12 +69,12 @@ const Work = ({ initialPosts, total }) => {
   );
 };
 
-export async function getServerSideProps() {
-  const { posts, total } = await loadData(0, LOAD_MORE_STEP); // loads an initial amount of posts imto props
+export async function getStaticProps() {
+  const { posts, total } = await getInitialData();
   return {
     props: {
       initialPosts: posts,
-      total,
+      total: total,
     },
   };
 }
