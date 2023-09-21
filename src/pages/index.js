@@ -49,18 +49,18 @@ export default function Home({ initialPosts, total }) {
             <Post key={post._id} {...post} />
           ))}
         </PostGrid>
-        {showLoadButton && (
+        {/* showLoadButton && (
           <div
             style={{
               display: "flex",
               justifyContent: "center",
             }}
           >
-            <a href="/portfolio">
+            <Link href="/portfolio">
               <button>View Portfolio</button>
-            </a>
+            </Link>
           </div>
-        )}
+          ) */}
       </Section>
     </div>
   );
