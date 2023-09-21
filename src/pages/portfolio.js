@@ -4,7 +4,7 @@ import { loadData } from "./api/post";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
 
-const LOAD_MORE_STEP = 8; // controls how many initial posts are shown
+const LOAD_MORE_STEP = 12; // controls how many initial posts are shown
 
 export async function getInitialData() {
   const { posts, total } = await loadData(0, LOAD_MORE_STEP);

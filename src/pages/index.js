@@ -3,7 +3,7 @@ import { loadBlogData } from "./api/blog";
 import { Section, PostGrid, Post, Blog, Button } from "@/components";
 import { useState } from "react";
 
-const LOAD_MORE_STEP = 8; // controls how many initial art posts are shown
+const LOAD_MORE_STEP = 12; // controls how many initial art posts are shown
 
 export async function getInitialData() {
   const { posts, total } = await loadData(0, LOAD_MORE_STEP);
@@ -17,7 +17,7 @@ export default function Home({ initialPosts, total }) {
   const [loadedAmount, setLoadedAmount] = useState(LOAD_MORE_STEP);
   const [loading, setLoading] = useState(false);
 
-  const showLoadButton = total > loadedAmount; // will show a load more button if total number of posts is more than initial amount
+  const showLoadButton = true; // will show a load more button if total number of posts is more than initial amount
 
   const getMorePosts = async () => {
     // queries x (LOAD_MORE_STEP) amount of posts that come after the initial posts
@@ -56,9 +56,9 @@ export default function Home({ initialPosts, total }) {
               justifyContent: "center",
             }}
           >
-            <Button disabled={loading} onClick={getMorePosts} type="standard">
-              load more posts...
-            </Button>
+            <a href="/portfolio">
+              <button>View Portfolio</button>
+            </a>
           </div>
         )}
       </Section>
