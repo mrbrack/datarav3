@@ -72,6 +72,23 @@
     }
   }
 
+  &Block {
+    margin: 0 0 3rem 0;
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &Title {
+      margin: 0;
+      padding: 0rem 6rem;
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   &TwoColumn {
     margin: 0;
     padding: 3rem 6rem;
@@ -190,6 +207,23 @@
       &Title {
         margin: 0;
         padding: 0rem 1.5rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    &Block {
+      margin: 0 0 3rem 0;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &Title {
+        margin: 0;
+        padding: 0rem 6rem;
         padding-bottom: 3rem;
         display: flex;
         flex-direction: column;
@@ -317,6 +351,23 @@
       &Title {
         margin: 0;
         padding: 0rem 1.5rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    &Block {
+      margin: 0 0 1.5rem 0;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &Title {
+        margin: 0;
+        padding: 0rem 6rem;
         padding-bottom: 3rem;
         display: flex;
         flex-direction: column;

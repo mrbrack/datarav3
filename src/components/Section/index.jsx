@@ -54,6 +54,14 @@ const Section = ({ children, className, type, title, titleType, img, alt }) => {
     }
   }
 
+  if (type === "block") {
+    return (
+      <section className={cl(className, styles.sectionBlock)}>
+        {children}
+      </section>
+    );
+  }
+
   if (type === "top") {
     if (title) {
       return (
