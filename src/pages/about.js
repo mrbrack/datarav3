@@ -80,8 +80,8 @@ const About = () => {
           </li>
           <li>
             Workshop. Facilitator. “Arts and Cultural Industries: Ethical
-            Marketing for Growth”. EMERGE Bootcamp, Burdall's Yard, Bath. 28th
-            March 2023.
+            Marketing for Growth”. EMERGE Bootcamp, Burdall&apos;s Yard, Bath.
+            28th March 2023.
           </li>
           <li>
             Workshop. Facilitator. “Entering the NFT Art Space”. Delivered to
