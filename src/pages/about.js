@@ -32,11 +32,9 @@ const About = () => {
             Generative artist and independent Arts and Technology facilitator.
           </p>
           <p>
-            I use creative programming to explore the intersection between
-            creativity, technology and human expression. I also facilitate
-            workshops covering the topics of ethical marketing, future
-            technologies, artificial intelligence ethics and website
-            development.
+            I use creative programming to create art, websites and experiences.
+            I also facilitate workshops covering the topics of ethics, future
+            technologies, website development and AI.
           </p>
           <p>
             My artworks find their roots in: the spectacle, environmental
