@@ -44,6 +44,9 @@ const About = () => {
             I am based in Bristol, UK and work out of Bath Spa University&apos;s
             EMERGE creative studio where I am a mentor in Creative Media.
           </p>
+          <p>
+            <Link href="/contact">Get in touch.</Link>
+          </p>
         </div>
       </Section>
       <Section type="block" className="portfolio">
