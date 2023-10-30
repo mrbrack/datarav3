@@ -28,7 +28,9 @@ const About = () => {
           priority
         />
         <div className="inner-container">
-          <p>Generative artist and freelance web developer.</p>
+          <p>
+            Generative artist and independent Arts and Technology facilitator.
+          </p>
           <p>
             I use creative programming to explore the intersection between
             creativity, technology and human expression. I also facilitate
@@ -43,12 +45,6 @@ const About = () => {
           <p>
             I am based in Bristol, UK and work out of Bath Spa University&apos;s
             EMERGE creative studio where I am a mentor in Creative Media.
-          </p>
-          <p>
-            I&apos;m really interested in developing collaborations with artists
-            working in other mediums.
-            {<Link href="/contact"> Get in touch </Link>}
-            if you&apos;ve got an idea you&apos;d like to explore!
           </p>
         </div>
       </Section>
