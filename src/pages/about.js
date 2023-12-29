@@ -29,20 +29,31 @@ const About = () => {
         />
         <div className="inner-container">
           <p>
-            Generative artist and independent Arts and Technology facilitator.
+            Generative artist, creative technologist and independent Arts and
+            Technology facilitator.
           </p>
           <p>
-            I use creative programming to create art, websites and experiences.
-            I also facilitate workshops covering the topics of ethics, future
-            technologies, website development and AI.
+            I use creative programming to create art, websites and live
+            experiences. I also facilitate workshops covering the topics of
+            ethics, future technologies, website development and AI.
           </p>
           <p>
-            My artworks find their roots in: the spectacle, environmental
-            concern, ethics, nostalgic technologies and electronic music.
+            I owe much of what I do to being surrounded by fine artists on an
+            almost daily basis. A core part of my practice involves
+            collaborating with them to bring their ideas to life using creative
+            technology.
           </p>
           <p>
-            I am based in Bristol, UK and work out of Bath Spa University&apos;s
-            EMERGE creative studio where I am a mentor in Creative Media.
+            My own artworks find their roots in: the spectacle, environmental
+            concern, ethics, nostalgic technologies and electronic music. From
+            time to time I enjoy sneaking my work into fine art environments.
+          </p>
+          <p>
+            I am based in Bath, UK, and I work out of{" "}
+            <Link href="https://thestudioinbath.co.uk" target="_blank">
+              The Studio in Bath
+            </Link>
+            , where I am currently a resident.
           </p>
           <p>
             <Link href="/contact">Get in touch.</Link>
@@ -54,17 +65,26 @@ const About = () => {
         <ul>
           <li>
             Exhibition. Selected. Generative Art. Print. “alternate spirals
-            {" (moon)"}”. Bath Open Art Prize. 44AD artspace, Bath. 12th to 28th
-            October 2023.
+            {" (moon)"}”.{" "}
+            <Link
+              href="https://www.fringeartsbath.co.uk/bathopen"
+              target="_blank"
+            >
+              Bath Open Art Prize
+            </Link>
+            . 44AD artspace, Bath. 12th to 28th October 2023.
           </li>
           <li>
             Exhibition/Performance. Selected. Performance Art/Live Coding. “for
-            them” live coding. EMERGE Showcase 2023, Bath. 18th October 2023.
+            them”. EMERGE Showcase 2023, Bath. 18th October 2023.
           </li>
           <li>
             Workshop. Co-Facilitator with Patent Attorney Judith Coghlan
-            {" (Script IP)"}. “From Algorithms to Artefacts”. Bath Digital
-            Festival. Carpenter House, Bath. 13th July 2023.
+            {" (Script IP)"}. “From Algorithms to Artefacts”.{" "}
+            <Link href="https://techspark.co/bdf" target="_blank">
+              Bath Digital Festival
+            </Link>
+            . Carpenter House, Bath. 13th July 2023.
           </li>
           <li>
             Exhibition. Group Exhibition. Generative Art. Video. “TUNN3L -
@@ -93,15 +113,19 @@ const About = () => {
           <li>
             Presentation. Co-Presenter with Novelist Joanne Rush and Oil Painter
             Saffron Murray-Browne. “Entering the NFT Art Space: Challenges and
-            Possibilities”. OxBAT 2022 - Oxford Blockchain, Art & Technology
-            Conference. Magdalen College, University of Oxford. 26th September
-            2022.
+            Possibilities”.{" "}
+            <Link href="https://oxbat.web.ox.ac.uk" target="_blank">
+              OxBAT 2022 - Oxford Blockchain, Art & Technology Conference.
+              Magdalen College
+            </Link>
+            , University of Oxford. 26th September 2022.
           </li>
         </ul>
       </Section>
       <Section type="block" className="portfolio">
         <h3>Residencies {"(Resident/Mentor)"}</h3>
         <ul>
+          <li>Resident. The Studio in Bath. December 2023 to present.</li>
           <li>
             Mentor in Creative Media. EMERGE, Bath Spa University. November 2023
             to present.
@@ -124,8 +148,8 @@ const About = () => {
         <h3>Lecturing</h3>
         <ul>
           <li>
-            Guest Lecturer. “Website Quick Hacks”. BA (Hons) Creative Arts
-            Practice, Bath Spa University. May 2023.
+            Guest Lecturer. “Website Quick Hacks for the Creative Industries”.
+            BA (Hons) Creative Arts Practice, Bath Spa University. May 2023.
           </li>
           <li>
             Associate Lecturer. “CodeLab” Module using C++. Bath Spa University.

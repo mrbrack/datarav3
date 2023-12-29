@@ -4,6 +4,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 3rem;
     row-gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   &Blog {
@@ -12,6 +16,10 @@
     column-gap: 6rem;
     row-gap: 3rem;
     min-height: 60vh;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 

@@ -41,7 +41,7 @@ export default function Home({ initialPosts, total }) {
         img="/home_back.png"
         alt="hundres of purple, green and blue dots styled in the shape of a wave"
       >
-        Generative Storytelling
+        Generative Artist & Creative Technologist
       </Section>
       <Section type="standard" title="lastest work" titleType="h2Top">
         <PostGrid type="post">
