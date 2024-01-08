@@ -2,8 +2,9 @@ import { loadData } from "./api/post";
 import { loadBlogData } from "./api/blog";
 import { Section, PostGrid, Post, Blog, Button } from "@/components";
 import { useState } from "react";
+import Link from "next/link";
 
-const LOAD_MORE_STEP = 12; // controls how many initial art posts are shown
+const LOAD_MORE_STEP = 8; // controls how many initial art posts are shown
 
 export async function getInitialData() {
   const { posts, total } = await loadData(0, LOAD_MORE_STEP);
@@ -49,18 +50,18 @@ export default function Home({ initialPosts, total }) {
             <Post key={post._id} {...post} />
           ))}
         </PostGrid>
-        {/* showLoadButton && (
+        {showLoadButton && (
           <div
             style={{
               display: "flex",
               justifyContent: "center",
             }}
           >
-            <Link href="/portfolio">
-              <button>View Portfolio</button>
+            <Link href="/portfolio" className="btn-link">
+              view more work
             </Link>
           </div>
-          ) */}
+        )}
       </Section>
     </div>
   );

@@ -60,7 +60,7 @@ const Work = ({ initialPosts, total }) => {
             }}
           >
             <Button disabled={loading} onClick={getMorePosts} type="standard">
-              load more posts...
+              load more work...
             </Button>
           </div>
         )}

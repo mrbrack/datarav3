@@ -182,12 +182,12 @@ const About = () => {
             .
           </li>
           <li>
-            Podcast partner - edit and distribution of episodes. “Bath Festivals
-            Podcast”. Bath Festivals, 2022.
+            Podcast partner {"(edit and distribution of episodes)"}. “Bath
+            Festivals Podcast”. Bath Festivals, 2022.
           </li>
           <li>
-            Co-producer and co-presenter. “Friday Night Fry Up”. Radio Bath,
-            2020 - 2022.
+            Co-producer and co-presenter. “Friday Night Fry Up Radio Show”.
+            Radio Bath, 2020 - 2022.
           </li>
           <li>
             Co-producer and co-presenter. “The Arts Show Radio Show”. Radio
