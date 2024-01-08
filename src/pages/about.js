@@ -161,6 +161,40 @@ const About = () => {
           </li>
         </ul>
       </Section>
+      <Section type="block" className="portfolio">
+        <h3>Audio</h3>
+        <ul>
+          <li>
+            Co-producer and co-presenter. “The Arts Show Podcast”. 2023. Listen
+            on:{" "}
+            <Link
+              href="https://open.spotify.com/show/6wzfctLEJ9CQi7S3N22PX3?si=908e870c1c1341cb"
+              target="_blank"
+            >
+              Spotify,
+            </Link>{" "}
+            <Link
+              href="https://podcasts.apple.com/gb/podcast/the-arts-show/id1669236704"
+              target="_blank"
+            >
+              Apple Podcasts
+            </Link>
+            .
+          </li>
+          <li>
+            Podcast partner - edit and distribution of episodes. “Bath Festivals
+            Podcast”. Bath Festivals, 2022.
+          </li>
+          <li>
+            Co-producer and co-presenter. “Friday Night Fry Up”. Radio Bath,
+            2020 - 2022.
+          </li>
+          <li>
+            Co-producer and co-presenter. “The Arts Show Radio Show”. Radio
+            Bath, 2020 - 2021.
+          </li>
+        </ul>
+      </Section>
     </>
   );
 };
