@@ -40,7 +40,7 @@ const Navbar = (className) => {
     <header className={cl(className, styles.header)}>
       <nav className={cl(className, styles.nav)}>
         <Link href="/" className={cl(className, styles.logo)}>
-          datarav3
+          <img src="/assets/logodatarav3.png" class="logo" />
         </Link>
         <div className={cl(className, styles.nav_bar_svp)}>
           <button
