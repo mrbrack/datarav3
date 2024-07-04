@@ -64,6 +64,24 @@ const About = () => {
         <h3>Exhibitions, Workshops and Performances</h3>
         <ul>
           <li>
+            Creative Technologist. "Data Dealers" designed by Coral Manton.
+            "InfluenZoo" designed by Naomi Smyth. Glastonbury Festival. 24th
+            June to 1st July 2024.
+          </li>
+          <li>
+            Live Coding Performance at the opening night of Brian Gibson and
+            Mathilde Salliou's "Work". Roseberry Road Studios. 3rd June, 2024.
+          </li>
+          <li>
+            Immersive Art Installation. Executive Producer, Creative Director
+            and Creative Technologist. “alt_wilderness”. Fringe Arts Bath
+            Festival. 24th May to 8th June 2024.
+          </li>
+          <li>
+            Workshop. Facilitator. “Co-Creating the Future of Bath”. Bath
+            Digital Festival, The Studio in Bath. 16th May, 2024.
+          </li>
+          <li>
             Exhibition. Selected. Generative Art. Print. “alternate spirals
             {" (moon)"}”.{" "}
             <Link
@@ -148,16 +166,21 @@ const About = () => {
         <h3>Lecturing</h3>
         <ul>
           <li>
+            Associate Lecturer. “User Experience Design”. BSc (Hons) Computing,
+            Bath Spa University. January 2024 to June 2024.
+          </li>
+          <li>
             Guest Lecturer. “Website Quick Hacks for the Creative Industries”.
             BA (Hons) Creative Arts Practice, Bath Spa University. May 2023.
           </li>
           <li>
-            Associate Lecturer. “CodeLab” Module using C++. Bath Spa University.
-            November 2022 to January 2023.
+            Associate Lecturer. “CodeLab” Module using C++. BA (Hons) Games
+            Development, Bath Spa University. November 2022 to January 2023.
           </li>
           <li>
-            Associate Lecturer. “Web Development” Module using Javascript, HTML
-            CSS and p5.js. Bath Spa University. February 2022 to May 2023.
+            Associate Lecturer. “Web Development”. BSc (Hons) Computing, BSc
+            (Hons) Cyber Security, BSc (Hons) Creative Computingusing
+            Javascript. Bath Spa University. February 2022 to May 2023.
           </li>
         </ul>
       </Section>
