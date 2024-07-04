@@ -66,7 +66,7 @@ const About = () => {
           <li>
             Creative Technologist. &apos;Data Dealers&apos; designed by Coral
             Manton. &apos;InfluenZoo&apos; designed by Naomi Smyth. Glastonbury
-            Festival. 24th June to 1st July 2024
+            Festival. 24th June to 1st July 2024.
           </li>
           <li>
             Live Coding Performance at the opening night of Brian Gibson and
