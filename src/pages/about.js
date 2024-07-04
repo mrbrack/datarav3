@@ -70,8 +70,8 @@ const About = () => {
           </li>
           <li>
             Live Coding Performance at the opening night of Brian Gibson and
-            Mathilde Salliou&apos;s &apos;Work&apos;. Roseberry Road Studios.
-            3rd June, 2024.
+            Mathilde Salliou&apos;s exhibition &apos;Work&apos;. Roseberry Road
+            Studios. 3rd June, 2024.
           </li>
           <li>
             Immersive Art Installation. Executive Producer, Creative Director
