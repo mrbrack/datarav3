@@ -64,27 +64,27 @@ const About = () => {
         <h3>Exhibitions, Workshops and Performances</h3>
         <ul>
           <li>
-            Creative Technologist. "Data Dealers" designed by Coral Manton.
-            "InfluenZoo" designed by Naomi Smyth. Glastonbury Festival. 24th
-            June to 1st July 2024
+            Creative Technologist. &apos;Data Dealers&apos; designed by Coral
+            Manton. &apos;InfluenZoo&apos; designed by Naomi Smyth. Glastonbury
+            Festival. 24th June to 1st July 2024
           </li>
           <li>
             Live Coding Performance at the opening night of Brian Gibson and
-            Mathilde Salliou&apos;s "Work". Roseberry Road Studios. 3rd June,
-            2024.
+            Mathilde Salliou&apos;s &apos;Work&apos;. Roseberry Road Studios.
+            3rd June, 2024.
           </li>
           <li>
             Immersive Art Installation. Executive Producer, Creative Director
-            and Creative Technologist. “alt_wilderness”. Fringe Arts Bath
-            Festival. 24th May to 8th June 2024.
+            and Creative Technologist. &apos;alt_wilderness&apos;. Fringe Arts
+            Bath Festival. 24th May to 8th June 2024.
           </li>
           <li>
-            Workshop. Facilitator. “Co-Creating the Future of Bath”. Bath
-            Digital Festival, The Studio in Bath. 16th May, 2024.
+            Workshop. Facilitator. &apos;Co-Creating the Future of Bath&apos;.
+            Bath Digital Festival, The Studio in Bath. 16th May, 2024.
           </li>
           <li>
-            Exhibition. Selected. Generative Art. Print. “alternate spirals
-            {" (moon)"}”.{" "}
+            Exhibition. Selected. Generative Art. Print.&apos;“alternate spirals
+            {" (moon)"}&apos;.{" "}
             <Link
               href="https://www.fringeartsbath.co.uk/bathopen"
               target="_blank"
@@ -94,45 +94,46 @@ const About = () => {
             . 44AD artspace, Bath. 12th to 28th October 2023.
           </li>
           <li>
-            Exhibition/Performance. Selected. Performance Art/Live Coding. “for
-            them”. EMERGE Showcase 2023, Bath. 18th October 2023.
+            Exhibition/Performance. Selected. Performance Art/Live Coding.
+            &apos;for them&apos;. EMERGE Showcase 2023, Bath. 18th October 2023.
           </li>
           <li>
             Workshop. Co-Facilitator with Patent Attorney Judith Coghlan
-            {" (Script IP)"}. “From Algorithms to Artefacts”.{" "}
+            {" (Script IP)"}. &apos;From Algorithms to Artefacts&apos;.{" "}
             <Link href="https://techspark.co/bdf" target="_blank">
               Bath Digital Festival
             </Link>
             . Carpenter House, Bath. 13th July 2023.
           </li>
           <li>
-            Exhibition. Group Exhibition. Generative Art. Video. “TUNN3L -
-            1971”. EMERGE Summer Showcase 2023, Newark Works, Bath. 15th June,
-            2023.
+            Exhibition. Group Exhibition. Generative Art. Video. &apos;TUNN3L -
+            1971&apos;. EMERGE Summer Showcase 2023, Newark Works, Bath. 15th
+            June, 2023.
           </li>
           <li>
-            Workshop. Facilitator. “Website Quick Hacks”. EMERGE, Bath Spa
-            University. 10th May, 2023.
+            Workshop. Facilitator. &apos;Website Quick Hacks&apos;. EMERGE, Bath
+            Spa University. 10th May, 2023.
           </li>
           <li>
-            Workshop. Facilitator. “Arts and Cultural Industries: Ethical
-            Marketing for Growth”. EMERGE Bootcamp, Burdall&apos;s Yard, Bath.
-            28th March 2023.
+            Workshop. Facilitator. &apos;Arts and Cultural Industries: Ethical
+            Marketing for Growth&apos;. EMERGE Bootcamp, Burdall&apos;s Yard,
+            Bath. 28th March 2023.
           </li>
           <li>
-            Workshop. Facilitator. “Entering the NFT Art Space”. Delivered to
-            delegates from Namibia University. Sion Hill Campus, Bath Spa
-            University. 20th January 2023.
+            Workshop. Facilitator. &apos;Entering the NFT Art Space&apos;.
+            Delivered to delegates from Namibia University. Sion Hill Campus,
+            Bath Spa University. 20th January 2023.
           </li>
           <li>
-            Workshop. Co-Facilitator with Creative Technologist Dave Webb. “Not
-            Formed Tangibly: A critical and practical look at NFTs for artists
-            and creators”. EMERGE, Bath Spa University. 23rd November, 2022.
+            Workshop. Co-Facilitator with Creative Technologist Dave Webb.
+            &apos;Not Formed Tangibly: A critical and practical look at NFTs for
+            artists and creators&apos;. EMERGE, Bath Spa University. 23rd
+            November, 2022.
           </li>
           <li>
             Presentation. Co-Presenter with Novelist Joanne Rush and Oil Painter
-            Saffron Murray-Browne. “Entering the NFT Art Space: Challenges and
-            Possibilities”.{" "}
+            Saffron Murray-Browne. &apos;Entering the NFT Art Space: Challenges
+            and Possibilities&apos;.{" "}
             <Link href="https://oxbat.web.ox.ac.uk" target="_blank">
               OxBAT 2022 - Oxford Blockchain, Art & Technology Conference.
               Magdalen College
@@ -167,21 +168,24 @@ const About = () => {
         <h3>Lecturing</h3>
         <ul>
           <li>
-            Associate Lecturer. “User Experience Design”. BSc (Hons) Computing,
-            Bath Spa University. January 2024 to June 2024.
+            Associate Lecturer. &apos;User Experience Design&apos;. BSc (Hons)
+            Computing, Bath Spa University. January 2024 to June 2024.
           </li>
           <li>
-            Guest Lecturer. “Website Quick Hacks for the Creative Industries”.
-            BA (Hons) Creative Arts Practice, Bath Spa University. May 2023.
+            Guest Lecturer. &apos;Website Quick Hacks for the Creative
+            Industries&apos;. BA (Hons) Creative Arts Practice, Bath Spa
+            University. May 2023.
           </li>
           <li>
-            Associate Lecturer. “CodeLab” Module using C++. BA (Hons) Games
-            Development, Bath Spa University. November 2022 to January 2023.
+            Associate Lecturer. &apos;CodeLab&apos; Module using C++. BA (Hons)
+            Games Development, Bath Spa University. November 2022 to January
+            2023.
           </li>
           <li>
-            Associate Lecturer. “Web Development”. BSc (Hons) Computing, BSc
-            (Hons) Cyber Security, BSc (Hons) Creative Computingusing
-            Javascript. Bath Spa University. February 2022 to May 2023.
+            Associate Lecturer. &apos;Web Development&apos;. BSc (Hons)
+            Computing, BSc (Hons) Cyber Security, BSc (Hons) Creative
+            Computingusing Javascript. Bath Spa University. February 2022 to May
+            2023.
           </li>
         </ul>
       </Section>
@@ -189,8 +193,8 @@ const About = () => {
         <h3>Audio</h3>
         <ul>
           <li>
-            Co-producer and co-presenter. “The Arts Show Podcast”. 2023. Listen
-            on:{" "}
+            Co-producer and co-presenter. &apos;The Arts Show Podcast&apos;.
+            2023. Listen on:{" "}
             <Link
               href="https://open.spotify.com/show/6wzfctLEJ9CQi7S3N22PX3?si=908e870c1c1341cb"
               target="_blank"
@@ -206,16 +210,16 @@ const About = () => {
             .
           </li>
           <li>
-            Podcast partner {"(edit and distribution of episodes)"}. “Bath
-            Festivals Podcast”. Bath Festivals, 2022.
+            Podcast partner {"(edit and distribution of episodes)"}. &apos;Bath
+            Festivals Podcast&apos;. Bath Festivals, 2022.
           </li>
           <li>
-            Co-producer and co-presenter. “Friday Night Fry Up Radio Show”.
-            Radio Bath, 2020 - 2022.
+            Co-producer and co-presenter. &apos;Friday Night Fry Up Radio
+            Show&apos;. Radio Bath, 2020 - 2022.
           </li>
           <li>
-            Co-producer and co-presenter. “The Arts Show Radio Show”. Radio
-            Bath, 2020 - 2021.
+            Co-producer and co-presenter. &apos;The Arts Show Radio Show&apos;.
+            Radio Bath, 2020 - 2021.
           </li>
         </ul>
       </Section>
