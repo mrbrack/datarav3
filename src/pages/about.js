@@ -66,11 +66,12 @@ const About = () => {
           <li>
             Creative Technologist. "Data Dealers" designed by Coral Manton.
             "InfluenZoo" designed by Naomi Smyth. Glastonbury Festival. 24th
-            June to 1st July 2024.
+            June to 1st July 2024
           </li>
           <li>
             Live Coding Performance at the opening night of Brian Gibson and
-            Mathilde Salliou's "Work". Roseberry Road Studios. 3rd June, 2024.
+            Mathilde Salliou&apos;s "Work". Roseberry Road Studios. 3rd June,
+            2024.
           </li>
           <li>
             Immersive Art Installation. Executive Producer, Creative Director
